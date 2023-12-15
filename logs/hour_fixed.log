@@ -4,7 +4,7 @@ are not used by default.  The intent is to use UCX for these devices.
 You can override this policy by setting the btl_openib_allow_ib MCA parameter
 to true.
 
-  Local host:              n0036.lr5
+  Local host:              n0172.lr5
   Local adapter:           mlx4_0
   Local port:              1
 
@@ -12,10 +12,10 @@ to true.
 --------------------------------------------------------------------------
 WARNING: There was an error initializing an OpenFabrics device.
 
-  Local host:   n0036.lr5
+  Local host:   n0172.lr5
   Local device: mlx4_0
 --------------------------------------------------------------------------
-ATS version _fb6f760e, Amanzi version _62a4c9559
+ATS version _8324a3fb, Amanzi version _62a4c9559
 ================================================================================
 
                       TimeMonitor results over 1 processor
@@ -620,43 +620,43 @@ ATS Driver         |        <Parameter docString="" id="481" isDefault="false" i
 ATS Driver         |        <Parameter docString="" id="482" isDefault="false" isUsed="true" name="van Genuchten n [-]" type="double" value="1.58000000000000007e+00"/>
 ATS Driver         |        <Parameter docString="" id="483" isDefault="false" isUsed="true" name="van Genuchten m [-]" type="double" value="3.67099999999999982e-01"/>
 ATS Driver         |        <Parameter docString="" id="484" isDefault="false" isUsed="true" name="residual saturation [-]" type="double" value="2.00000000000000011e-01"/>
-ATS Driver         |        <ParameterList id="486" name="verbose object">
-ATS Driver         |          <Parameter docString="" id="485" isDefault="false" isUsed="true" name="verbosity level" type="string" value="low"/>
+ATS Driver         |        <Parameter docString="" id="485" isDefault="false" isUsed="true" name="initial time step" type="double" value="3.60000000000000000e+03"/>
+ATS Driver         |        <ParameterList id="487" name="verbose object">
+ATS Driver         |          <Parameter docString="" id="486" isDefault="false" isUsed="true" name="verbosity level" type="string" value="low"/>
 ATS Driver         |        </ParameterList>
-ATS Driver         |        <Parameter docString="" id="487" isDefault="true" isUsed="true" name="domain name" type="string" value="domain"/>
-ATS Driver         |        <Parameter docString="" id="488" isDefault="true" isUsed="true" name="surface domain name" type="string" value="surface"/>
-ATS Driver         |        <Parameter docString="" id="489" isDefault="true" isUsed="true" name="total component concentration key" type="string" value="total_component_concentration"/>
-ATS Driver         |        <Parameter docString="" id="490" isDefault="true" isUsed="true" name="porosity key" type="string" value="porosity"/>
-ATS Driver         |        <Parameter docString="" id="491" isDefault="true" isUsed="true" name="saturation liquid key" type="string" value="saturation_liquid"/>
-ATS Driver         |        <Parameter docString="" id="492" isDefault="true" isUsed="true" name="saturation gas key" type="string" value="saturation_gas"/>
-ATS Driver         |        <Parameter docString="" id="493" isDefault="true" isUsed="true" name="saturation ice key" type="string" value="saturation_ice"/>
-ATS Driver         |        <Parameter docString="" id="494" isDefault="true" isUsed="true" name="water content key" type="string" value="water_content"/>
-ATS Driver         |        <Parameter docString="" id="495" isDefault="true" isUsed="true" name="relative permeability key" type="string" value="relative_permeability"/>
-ATS Driver         |        <Parameter docString="" id="496" isDefault="true" isUsed="true" name="matric pressure key" type="string" value="matric_pressure"/>
-ATS Driver         |        <Parameter docString="" id="497" isDefault="true" isUsed="true" name="mass density liquid key" type="string" value="mass_density_liquid"/>
-ATS Driver         |        <Parameter docString="" id="498" isDefault="true" isUsed="true" name="mass density ice key" type="string" value="mass_density_ice"/>
-ATS Driver         |        <Parameter docString="" id="499" isDefault="true" isUsed="true" name="mass density gas key" type="string" value="mass_density_gas"/>
-ATS Driver         |        <Parameter docString="" id="500" isDefault="true" isUsed="true" name="density rock key" type="string" value="density_rock"/>
-ATS Driver         |        <Parameter docString="" id="501" isDefault="true" isUsed="true" name="temperature key" type="string" value="temperature"/>
-ATS Driver         |        <Parameter docString="" id="502" isDefault="true" isUsed="true" name="thermal conductivity key" type="string" value="thermal_conductivity"/>
-ATS Driver         |        <Parameter docString="" id="503" isDefault="true" isUsed="true" name="surface water source key" type="string" value="surface-water_source"/>
-ATS Driver         |        <Parameter docString="" id="504" isDefault="true" isUsed="true" name="surface energy source key" type="string" value="surface-total_energy_source"/>
-ATS Driver         |        <Parameter docString="" id="505" isDefault="true" isUsed="true" name="subsurface water source key" type="string" value="water_source"/>
-ATS Driver         |        <Parameter docString="" id="506" isDefault="true" isUsed="true" name="subsurface energy source key" type="string" value="total_energy_source"/>
-ATS Driver         |        <Parameter docString="" id="507" isDefault="true" isUsed="true" name="surface energy source ecosim key" type="string" value="surface-ecosim_source"/>
-ATS Driver         |        <Parameter docString="" id="508" isDefault="true" isUsed="true" name="cell volume key" type="string" value="cell_volume"/>
-ATS Driver         |        <Parameter docString="" id="509" isDefault="true" isUsed="true" name="hydraulic conductivity key" type="string" value="hydraulic_conductivity"/>
-ATS Driver         |        <Parameter docString="" id="510" isDefault="true" isUsed="true" name="bulk density key" type="string" value="bulk_density"/>
-ATS Driver         |        <Parameter docString="" id="511" isDefault="true" isUsed="true" name="incoming shortwave radiation key" type="string" value="surface-incoming_shortwave_radiation"/>
-ATS Driver         |        <Parameter docString="" id="512" isDefault="true" isUsed="true" name="incoming longwave radiation key" type="string" value="surface-incoming_longwave_radiation"/>
-ATS Driver         |        <Parameter docString="" id="513" isDefault="true" isUsed="true" name="air temperature key" type="string" value="surface-air_temperature"/>
-ATS Driver         |        <Parameter docString="" id="514" isDefault="true" isUsed="true" name="vapor pressure air key" type="string" value="surface-vapor_pressure_air"/>
-ATS Driver         |        <Parameter docString="" id="515" isDefault="true" isUsed="true" name="wind speed key" type="string" value="surface-wind_speed"/>
-ATS Driver         |        <Parameter docString="" id="516" isDefault="true" isUsed="true" name="precipitation rain key" type="string" value="surface-precipitation_rain"/>
-ATS Driver         |        <Parameter docString="" id="517" isDefault="true" isUsed="true" name="elevation key" type="string" value="surface-elevation"/>
-ATS Driver         |        <Parameter docString="" id="518" isDefault="true" isUsed="true" name="aspect key" type="string" value="surface-aspect"/>
-ATS Driver         |        <Parameter docString="" id="519" isDefault="true" isUsed="true" name="slope key" type="string" value="surface-slope_magnitude"/>
-ATS Driver         |        <Parameter docString="" id="520" isDefault="true" isUsed="true" name="initial time step" type="double" value="1.00000000000000000e+00"/>
+ATS Driver         |        <Parameter docString="" id="488" isDefault="true" isUsed="true" name="domain name" type="string" value="domain"/>
+ATS Driver         |        <Parameter docString="" id="489" isDefault="true" isUsed="true" name="surface domain name" type="string" value="surface"/>
+ATS Driver         |        <Parameter docString="" id="490" isDefault="true" isUsed="true" name="total component concentration key" type="string" value="total_component_concentration"/>
+ATS Driver         |        <Parameter docString="" id="491" isDefault="true" isUsed="true" name="porosity key" type="string" value="porosity"/>
+ATS Driver         |        <Parameter docString="" id="492" isDefault="true" isUsed="true" name="saturation liquid key" type="string" value="saturation_liquid"/>
+ATS Driver         |        <Parameter docString="" id="493" isDefault="true" isUsed="true" name="saturation gas key" type="string" value="saturation_gas"/>
+ATS Driver         |        <Parameter docString="" id="494" isDefault="true" isUsed="true" name="saturation ice key" type="string" value="saturation_ice"/>
+ATS Driver         |        <Parameter docString="" id="495" isDefault="true" isUsed="true" name="water content key" type="string" value="water_content"/>
+ATS Driver         |        <Parameter docString="" id="496" isDefault="true" isUsed="true" name="relative permeability key" type="string" value="relative_permeability"/>
+ATS Driver         |        <Parameter docString="" id="497" isDefault="true" isUsed="true" name="matric pressure key" type="string" value="matric_pressure"/>
+ATS Driver         |        <Parameter docString="" id="498" isDefault="true" isUsed="true" name="mass density liquid key" type="string" value="mass_density_liquid"/>
+ATS Driver         |        <Parameter docString="" id="499" isDefault="true" isUsed="true" name="mass density ice key" type="string" value="mass_density_ice"/>
+ATS Driver         |        <Parameter docString="" id="500" isDefault="true" isUsed="true" name="mass density gas key" type="string" value="mass_density_gas"/>
+ATS Driver         |        <Parameter docString="" id="501" isDefault="true" isUsed="true" name="density rock key" type="string" value="density_rock"/>
+ATS Driver         |        <Parameter docString="" id="502" isDefault="true" isUsed="true" name="temperature key" type="string" value="temperature"/>
+ATS Driver         |        <Parameter docString="" id="503" isDefault="true" isUsed="true" name="thermal conductivity key" type="string" value="thermal_conductivity"/>
+ATS Driver         |        <Parameter docString="" id="504" isDefault="true" isUsed="true" name="surface water source key" type="string" value="surface-water_source"/>
+ATS Driver         |        <Parameter docString="" id="505" isDefault="true" isUsed="true" name="surface energy source key" type="string" value="surface-total_energy_source"/>
+ATS Driver         |        <Parameter docString="" id="506" isDefault="true" isUsed="true" name="subsurface water source key" type="string" value="water_source"/>
+ATS Driver         |        <Parameter docString="" id="507" isDefault="true" isUsed="true" name="subsurface energy source key" type="string" value="total_energy_source"/>
+ATS Driver         |        <Parameter docString="" id="508" isDefault="true" isUsed="true" name="surface energy source ecosim key" type="string" value="surface-ecosim_source"/>
+ATS Driver         |        <Parameter docString="" id="509" isDefault="true" isUsed="true" name="cell volume key" type="string" value="cell_volume"/>
+ATS Driver         |        <Parameter docString="" id="510" isDefault="true" isUsed="true" name="hydraulic conductivity key" type="string" value="hydraulic_conductivity"/>
+ATS Driver         |        <Parameter docString="" id="511" isDefault="true" isUsed="true" name="bulk density key" type="string" value="bulk_density"/>
+ATS Driver         |        <Parameter docString="" id="512" isDefault="true" isUsed="true" name="incoming shortwave radiation key" type="string" value="surface-incoming_shortwave_radiation"/>
+ATS Driver         |        <Parameter docString="" id="513" isDefault="true" isUsed="true" name="incoming longwave radiation key" type="string" value="surface-incoming_longwave_radiation"/>
+ATS Driver         |        <Parameter docString="" id="514" isDefault="true" isUsed="true" name="air temperature key" type="string" value="surface-air_temperature"/>
+ATS Driver         |        <Parameter docString="" id="515" isDefault="true" isUsed="true" name="vapor pressure air key" type="string" value="surface-vapor_pressure_air"/>
+ATS Driver         |        <Parameter docString="" id="516" isDefault="true" isUsed="true" name="wind speed key" type="string" value="surface-wind_speed"/>
+ATS Driver         |        <Parameter docString="" id="517" isDefault="true" isUsed="true" name="precipitation rain key" type="string" value="surface-precipitation_rain"/>
+ATS Driver         |        <Parameter docString="" id="518" isDefault="true" isUsed="true" name="elevation key" type="string" value="surface-elevation"/>
+ATS Driver         |        <Parameter docString="" id="519" isDefault="true" isUsed="true" name="aspect key" type="string" value="surface-aspect"/>
+ATS Driver         |        <Parameter docString="" id="520" isDefault="true" isUsed="true" name="slope key" type="string" value="surface-slope_magnitude"/>
 ATS Driver         |      </ParameterList>
 ATS Driver         |    </ParameterList>
 ATS Driver         |    <ParameterList id="884" name="state">
@@ -1194,207 +1194,6 @@ ATS Driver         |  ======================> done dumping parameter list. <====
 State              |   initializing data through initial conditions...
 EcoSIM coupler     |   Did not find ice key
 EcoSIM coupler     |  Column 0
-EcoSIM coupler     |  Depth[0] = 0.05 Depth_Reversed[0] = 10
-EcoSIM coupler     |  Depth[1] = 0.15 Depth_Reversed[1] = 9.9
-EcoSIM coupler     |  Depth[2] = 0.25 Depth_Reversed[2] = 9.8
-EcoSIM coupler     |  Depth[3] = 0.35 Depth_Reversed[3] = 9.7
-EcoSIM coupler     |  Depth[4] = 0.45 Depth_Reversed[4] = 9.6
-EcoSIM coupler     |  Depth[5] = 0.55 Depth_Reversed[5] = 9.5
-EcoSIM coupler     |  Depth[6] = 0.65 Depth_Reversed[6] = 9.4
-EcoSIM coupler     |  Depth[7] = 0.75 Depth_Reversed[7] = 9.3
-EcoSIM coupler     |  Depth[8] = 0.85 Depth_Reversed[8] = 9.2
-EcoSIM coupler     |  Depth[9] = 0.95 Depth_Reversed[9] = 9.1
-EcoSIM coupler     |  Depth[10] = 1.05 Depth_Reversed[10] = 9
-EcoSIM coupler     |  Depth[11] = 1.15 Depth_Reversed[11] = 8.9
-EcoSIM coupler     |  Depth[12] = 1.25 Depth_Reversed[12] = 8.8
-EcoSIM coupler     |  Depth[13] = 1.35 Depth_Reversed[13] = 8.7
-EcoSIM coupler     |  Depth[14] = 1.45 Depth_Reversed[14] = 8.6
-EcoSIM coupler     |  Depth[15] = 1.55 Depth_Reversed[15] = 8.5
-EcoSIM coupler     |  Depth[16] = 1.65 Depth_Reversed[16] = 8.4
-EcoSIM coupler     |  Depth[17] = 1.75 Depth_Reversed[17] = 8.3
-EcoSIM coupler     |  Depth[18] = 1.85 Depth_Reversed[18] = 8.2
-EcoSIM coupler     |  Depth[19] = 1.95 Depth_Reversed[19] = 8.1
-EcoSIM coupler     |  Depth[20] = 2.05 Depth_Reversed[20] = 8
-EcoSIM coupler     |  Depth[21] = 2.15 Depth_Reversed[21] = 7.9
-EcoSIM coupler     |  Depth[22] = 2.25 Depth_Reversed[22] = 7.8
-EcoSIM coupler     |  Depth[23] = 2.35 Depth_Reversed[23] = 7.7
-EcoSIM coupler     |  Depth[24] = 2.45 Depth_Reversed[24] = 7.6
-EcoSIM coupler     |  Depth[25] = 2.55 Depth_Reversed[25] = 7.5
-EcoSIM coupler     |  Depth[26] = 2.65 Depth_Reversed[26] = 7.4
-EcoSIM coupler     |  Depth[27] = 2.75 Depth_Reversed[27] = 7.3
-EcoSIM coupler     |  Depth[28] = 2.85 Depth_Reversed[28] = 7.2
-EcoSIM coupler     |  Depth[29] = 2.95 Depth_Reversed[29] = 7.1
-EcoSIM coupler     |  Depth[30] = 3.05 Depth_Reversed[30] = 7
-EcoSIM coupler     |  Depth[31] = 3.15 Depth_Reversed[31] = 6.9
-EcoSIM coupler     |  Depth[32] = 3.25 Depth_Reversed[32] = 6.8
-EcoSIM coupler     |  Depth[33] = 3.35 Depth_Reversed[33] = 6.7
-EcoSIM coupler     |  Depth[34] = 3.45 Depth_Reversed[34] = 6.6
-EcoSIM coupler     |  Depth[35] = 3.55 Depth_Reversed[35] = 6.5
-EcoSIM coupler     |  Depth[36] = 3.65 Depth_Reversed[36] = 6.4
-EcoSIM coupler     |  Depth[37] = 3.75 Depth_Reversed[37] = 6.3
-EcoSIM coupler     |  Depth[38] = 3.85 Depth_Reversed[38] = 6.2
-EcoSIM coupler     |  Depth[39] = 3.95 Depth_Reversed[39] = 6.1
-EcoSIM coupler     |  Depth[40] = 4.05 Depth_Reversed[40] = 6
-EcoSIM coupler     |  Depth[41] = 4.15 Depth_Reversed[41] = 5.9
-EcoSIM coupler     |  Depth[42] = 4.25 Depth_Reversed[42] = 5.8
-EcoSIM coupler     |  Depth[43] = 4.35 Depth_Reversed[43] = 5.7
-EcoSIM coupler     |  Depth[44] = 4.45 Depth_Reversed[44] = 5.6
-EcoSIM coupler     |  Depth[45] = 4.55 Depth_Reversed[45] = 5.5
-EcoSIM coupler     |  Depth[46] = 4.65 Depth_Reversed[46] = 5.4
-EcoSIM coupler     |  Depth[47] = 4.75 Depth_Reversed[47] = 5.3
-EcoSIM coupler     |  Depth[48] = 4.85 Depth_Reversed[48] = 5.2
-EcoSIM coupler     |  Depth[49] = 4.95 Depth_Reversed[49] = 5.1
-EcoSIM coupler     |  Depth[50] = 5.05 Depth_Reversed[50] = 5
-EcoSIM coupler     |  Depth[51] = 5.15 Depth_Reversed[51] = 4.9
-EcoSIM coupler     |  Depth[52] = 5.25 Depth_Reversed[52] = 4.8
-EcoSIM coupler     |  Depth[53] = 5.35 Depth_Reversed[53] = 4.7
-EcoSIM coupler     |  Depth[54] = 5.45 Depth_Reversed[54] = 4.6
-EcoSIM coupler     |  Depth[55] = 5.55 Depth_Reversed[55] = 4.5
-EcoSIM coupler     |  Depth[56] = 5.65 Depth_Reversed[56] = 4.4
-EcoSIM coupler     |  Depth[57] = 5.75 Depth_Reversed[57] = 4.3
-EcoSIM coupler     |  Depth[58] = 5.85 Depth_Reversed[58] = 4.2
-EcoSIM coupler     |  Depth[59] = 5.95 Depth_Reversed[59] = 4.1
-EcoSIM coupler     |  Depth[60] = 6.05 Depth_Reversed[60] = 4
-EcoSIM coupler     |  Depth[61] = 6.15 Depth_Reversed[61] = 3.9
-EcoSIM coupler     |  Depth[62] = 6.25 Depth_Reversed[62] = 3.8
-EcoSIM coupler     |  Depth[63] = 6.35 Depth_Reversed[63] = 3.7
-EcoSIM coupler     |  Depth[64] = 6.45 Depth_Reversed[64] = 3.6
-EcoSIM coupler     |  Depth[65] = 6.55 Depth_Reversed[65] = 3.5
-EcoSIM coupler     |  Depth[66] = 6.65 Depth_Reversed[66] = 3.4
-EcoSIM coupler     |  Depth[67] = 6.75 Depth_Reversed[67] = 3.3
-EcoSIM coupler     |  Depth[68] = 6.85 Depth_Reversed[68] = 3.2
-EcoSIM coupler     |  Depth[69] = 6.95 Depth_Reversed[69] = 3.1
-EcoSIM coupler     |  Depth[70] = 7.05 Depth_Reversed[70] = 3
-EcoSIM coupler     |  Depth[71] = 7.15 Depth_Reversed[71] = 2.9
-EcoSIM coupler     |  Depth[72] = 7.25 Depth_Reversed[72] = 2.8
-EcoSIM coupler     |  Depth[73] = 7.35 Depth_Reversed[73] = 2.7
-EcoSIM coupler     |  Depth[74] = 7.45 Depth_Reversed[74] = 2.6
-EcoSIM coupler     |  Depth[75] = 7.55 Depth_Reversed[75] = 2.5
-EcoSIM coupler     |  Depth[76] = 7.65 Depth_Reversed[76] = 2.4
-EcoSIM coupler     |  Depth[77] = 7.75 Depth_Reversed[77] = 2.3
-EcoSIM coupler     |  Depth[78] = 7.85 Depth_Reversed[78] = 2.2
-EcoSIM coupler     |  Depth[79] = 7.95 Depth_Reversed[79] = 2.1
-EcoSIM coupler     |  Depth[80] = 8.05 Depth_Reversed[80] = 2
-EcoSIM coupler     |  Depth[81] = 8.15 Depth_Reversed[81] = 1.9
-EcoSIM coupler     |  Depth[82] = 8.25 Depth_Reversed[82] = 1.8
-EcoSIM coupler     |  Depth[83] = 8.35 Depth_Reversed[83] = 1.7
-EcoSIM coupler     |  Depth[84] = 8.45 Depth_Reversed[84] = 1.6
-EcoSIM coupler     |  Depth[85] = 8.55 Depth_Reversed[85] = 1.5
-EcoSIM coupler     |  Depth[86] = 8.65 Depth_Reversed[86] = 1.4
-EcoSIM coupler     |  Depth[87] = 8.75 Depth_Reversed[87] = 1.3
-EcoSIM coupler     |  Depth[88] = 8.85 Depth_Reversed[88] = 1.2
-EcoSIM coupler     |  Depth[89] = 8.95 Depth_Reversed[89] = 1.1
-EcoSIM coupler     |  Depth[90] = 9.05 Depth_Reversed[90] = 1
-EcoSIM coupler     |  Depth[91] = 9.15 Depth_Reversed[91] = 0.9
-EcoSIM coupler     |  Depth[92] = 9.25 Depth_Reversed[92] = 0.8
-EcoSIM coupler     |  Depth[93] = 9.35 Depth_Reversed[93] = 0.7
-EcoSIM coupler     |  Depth[94] = 9.45 Depth_Reversed[94] = 0.6
-EcoSIM coupler     |  Depth[95] = 9.55 Depth_Reversed[95] = 0.5
-EcoSIM coupler     |  Depth[96] = 9.65 Depth_Reversed[96] = 0.4
-EcoSIM coupler     |  Depth[97] = 9.75 Depth_Reversed[97] = 0.3
-EcoSIM coupler     |  Depth[98] = 9.85 Depth_Reversed[98] = 0.2
-EcoSIM coupler     |  Depth[99] = 9.95 Depth_Reversed[99] = 0.1
-EcoSIM coupler     |  printing temperature:temp[0] = 0
-EcoSIM coupler     |  temp[1] = 0
-EcoSIM coupler     |  temp[2] = 0
-EcoSIM coupler     |  temp[3] = 0
-EcoSIM coupler     |  temp[4] = 0
-EcoSIM coupler     |  temp[5] = 0
-EcoSIM coupler     |  temp[6] = 0
-EcoSIM coupler     |  temp[7] = 0
-EcoSIM coupler     |  temp[8] = 0
-EcoSIM coupler     |  temp[9] = 0
-EcoSIM coupler     |  temp[10] = 0
-EcoSIM coupler     |  temp[11] = 0
-EcoSIM coupler     |  temp[12] = 0
-EcoSIM coupler     |  temp[13] = 0
-EcoSIM coupler     |  temp[14] = 0
-EcoSIM coupler     |  temp[15] = 0
-EcoSIM coupler     |  temp[16] = 0
-EcoSIM coupler     |  temp[17] = 0
-EcoSIM coupler     |  temp[18] = 0
-EcoSIM coupler     |  temp[19] = 0
-EcoSIM coupler     |  temp[20] = 0
-EcoSIM coupler     |  temp[21] = 0
-EcoSIM coupler     |  temp[22] = 0
-EcoSIM coupler     |  temp[23] = 0
-EcoSIM coupler     |  temp[24] = 0
-EcoSIM coupler     |  temp[25] = 0
-EcoSIM coupler     |  temp[26] = 0
-EcoSIM coupler     |  temp[27] = 0
-EcoSIM coupler     |  temp[28] = 0
-EcoSIM coupler     |  temp[29] = 0
-EcoSIM coupler     |  temp[30] = 0
-EcoSIM coupler     |  temp[31] = 0
-EcoSIM coupler     |  temp[32] = 0
-EcoSIM coupler     |  temp[33] = 0
-EcoSIM coupler     |  temp[34] = 0
-EcoSIM coupler     |  temp[35] = 0
-EcoSIM coupler     |  temp[36] = 0
-EcoSIM coupler     |  temp[37] = 0
-EcoSIM coupler     |  temp[38] = 0
-EcoSIM coupler     |  temp[39] = 0
-EcoSIM coupler     |  temp[40] = 0
-EcoSIM coupler     |  temp[41] = 0
-EcoSIM coupler     |  temp[42] = 0
-EcoSIM coupler     |  temp[43] = 0
-EcoSIM coupler     |  temp[44] = 0
-EcoSIM coupler     |  temp[45] = 0
-EcoSIM coupler     |  temp[46] = 0
-EcoSIM coupler     |  temp[47] = 0
-EcoSIM coupler     |  temp[48] = 0
-EcoSIM coupler     |  temp[49] = 0
-EcoSIM coupler     |  temp[50] = 0
-EcoSIM coupler     |  temp[51] = 0
-EcoSIM coupler     |  temp[52] = 0
-EcoSIM coupler     |  temp[53] = 0
-EcoSIM coupler     |  temp[54] = 0
-EcoSIM coupler     |  temp[55] = 0
-EcoSIM coupler     |  temp[56] = 0
-EcoSIM coupler     |  temp[57] = 0
-EcoSIM coupler     |  temp[58] = 0
-EcoSIM coupler     |  temp[59] = 0
-EcoSIM coupler     |  temp[60] = 0
-EcoSIM coupler     |  temp[61] = 0
-EcoSIM coupler     |  temp[62] = 0
-EcoSIM coupler     |  temp[63] = 0
-EcoSIM coupler     |  temp[64] = 0
-EcoSIM coupler     |  temp[65] = 0
-EcoSIM coupler     |  temp[66] = 0
-EcoSIM coupler     |  temp[67] = 0
-EcoSIM coupler     |  temp[68] = 0
-EcoSIM coupler     |  temp[69] = 0
-EcoSIM coupler     |  temp[70] = 0
-EcoSIM coupler     |  temp[71] = 0
-EcoSIM coupler     |  temp[72] = 0
-EcoSIM coupler     |  temp[73] = 0
-EcoSIM coupler     |  temp[74] = 0
-EcoSIM coupler     |  temp[75] = 0
-EcoSIM coupler     |  temp[76] = 0
-EcoSIM coupler     |  temp[77] = 0
-EcoSIM coupler     |  temp[78] = 0
-EcoSIM coupler     |  temp[79] = 0
-EcoSIM coupler     |  temp[80] = 0
-EcoSIM coupler     |  temp[81] = 0
-EcoSIM coupler     |  temp[82] = 0
-EcoSIM coupler     |  temp[83] = 0
-EcoSIM coupler     |  temp[84] = 0
-EcoSIM coupler     |  temp[85] = 0
-EcoSIM coupler     |  temp[86] = 0
-EcoSIM coupler     |  temp[87] = 0
-EcoSIM coupler     |  temp[88] = 0
-EcoSIM coupler     |  temp[89] = 0
-EcoSIM coupler     |  temp[90] = 0
-EcoSIM coupler     |  temp[91] = 0
-EcoSIM coupler     |  temp[92] = 0
-EcoSIM coupler     |  temp[93] = 0
-EcoSIM coupler     |  temp[94] = 0
-EcoSIM coupler     |  temp[95] = 0
-EcoSIM coupler     |  temp[96] = 0
-EcoSIM coupler     |  temp[97] = 0
-EcoSIM coupler     |  temp[98] = 0
-EcoSIM coupler     |  temp[99] = 0
-EcoSIM coupler     |  Column 0
 EcoSIM coupler     |  energy from dict: 0
 EcoSIM coupler     |  energy from State: 0
  starting driver transfer ATS2EcoSIMData
@@ -1419,8 +1218,8 @@ EcoSIM coupler     |  energy from State: 0
  Dimensions of TKSoi1:         101         101           2
  Dimensions of a_TEMP:         100           1
   NY  NX  east  west south north    altitude Dist(m):E-W Dist(m):N-S   aspect(o)    slope(o)      slope0  slope-east slope-north        GSIN        GCOS       GSINA
-   1   1     T     F     F     T  0.0000E+00  0.0000E+00  0.0000E+00  0.2323-309  0.0000E+00  0.1745E-03 -0.1745E-03  0.7074-315  0.1745E-03  0.1000E+01  0.4054-311
-   1   2     T     F     F     T  0.0000E+00  0.0000E+00  0.0000E+00  0.2202-315  0.0000E+00  0.1745E-03 -0.1745E-03  0.6719-321  0.1745E-03  0.1000E+01  0.3842-317
+   1   1     T     F     F     T  0.0000E+00  0.0000E+00  0.0000E+00  0.2331-309  0.0000E+00  0.1745E-03 -0.1745E-03  0.7099-315  0.1745E-03  0.1000E+01  0.4068-311
+   1   2     T     F     F     T  0.0000E+00  0.0000E+00  0.0000E+00  0.1724-315  0.0000E+00  0.1745E-03 -0.1745E-03  0.5237-321  0.1745E-03  0.1000E+01  0.3009-317
    1   3     T     F     F     T  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.1745E-03 -0.1745E-03  0.0000E+00  0.1745E-03  0.1000E+01  0.0000E+00
    1   4     T     F     F     T  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.1745E-03 -0.1745E-03  0.0000E+00  0.1745E-03  0.1000E+01  0.0000E+00
    1   5     T     F     F     T  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.1745E-03 -0.1745E-03  0.0000E+00  0.1745E-03  0.1000E+01  0.0000E+00
@@ -1515,15 +1314,7 @@ EcoSIM coupler     |  energy from State: 0
    1  94     T     F     F     T  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.1745E-03 -0.1745E-03  0.0000E+00  0.1745E-03  0.1000E+01  0.0000E+00
    1  95     T     F     F     T  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.1745E-03 -0.1745E-03  0.0000E+00  0.1745E-03  0.1000E+01  0.0000E+00
    1  96     T     F     F     T  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.1745E-03 -0.1745E-03  0.0000E+00  0.1745E-03  0.1000E+01  0.0000E+00
-   1  97     T     F     F     T  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.1745E-03 -0.1745E-03  0.0000E+00  0.1745E-03  0.1000E+01  0.0000E+00
-   1  98     T     F     F     T  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.1745E-03 -0.1745E-03  0.0000E+00  0.1745E-03  0.1000E+01  0.0000E+00
-   1  99     T     F     F     T  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.1745E-03 -0.1745E-03  0.0000E+00  0.1745E-03  0.1000E+01  0.0000E+00
-   1 100     T     F     F     T  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00  0.1745E-03 -0.1745E-03  0.0000E+00  0.1745E-03  0.1000E+01  0.0000E+00
- Finished Subroutine Init_EcoSIM_Soil
- starting driver transfer EcoSIM2ATSData
- Copying back
- finished copying back in driver
-EcoSIM coupler     |   ATS timestep: 1 s
+EcoSIM coupler     |   ATS timestep: 3600 s
 EcoSIM coupler     |   Total energy from EcoSIM: 0 MJ
 EcoSIM coupler     |   Rate to conserve flux from EcoSIM: 0 MJ/s
 EcoSIM coupler     |   Rate to conserve total energy from EcoSIM: 0 MJ/s
@@ -1709,247 +1500,20 @@ Surface Transport  |  assign tcc key to tag current and tag next
 Surface Transport  |  tag next if statement 
 Coordinator        |  ======================================================================
 Coordinator        |  
-Coordinator        |  Cycle = 0,  Time [days] = 0,  dt [days] = 1.157407407407407e-05
+Coordinator        |  Cycle = 0,  Time [days] = 0,  dt [days] = 0.04166666666666666
 Coordinator        |  ----------------------------------------------------------------------
-EcoSIM coupler     |  Column 0
-EcoSIM coupler     |  Depth[0] = 0.05 Depth_Reversed[0] = 10
-EcoSIM coupler     |  Depth[1] = 0.15 Depth_Reversed[1] = 9.9
-EcoSIM coupler     |  Depth[2] = 0.25 Depth_Reversed[2] = 9.8
-EcoSIM coupler     |  Depth[3] = 0.35 Depth_Reversed[3] = 9.7
-EcoSIM coupler     |  Depth[4] = 0.45 Depth_Reversed[4] = 9.6
-EcoSIM coupler     |  Depth[5] = 0.55 Depth_Reversed[5] = 9.5
-EcoSIM coupler     |  Depth[6] = 0.65 Depth_Reversed[6] = 9.4
-EcoSIM coupler     |  Depth[7] = 0.75 Depth_Reversed[7] = 9.3
-EcoSIM coupler     |  Depth[8] = 0.85 Depth_Reversed[8] = 9.2
-EcoSIM coupler     |  Depth[9] = 0.95 Depth_Reversed[9] = 9.1
-EcoSIM coupler     |  Depth[10] = 1.05 Depth_Reversed[10] = 9
-EcoSIM coupler     |  Depth[11] = 1.15 Depth_Reversed[11] = 8.9
-EcoSIM coupler     |  Depth[12] = 1.25 Depth_Reversed[12] = 8.8
-EcoSIM coupler     |  Depth[13] = 1.35 Depth_Reversed[13] = 8.7
-EcoSIM coupler     |  Depth[14] = 1.45 Depth_Reversed[14] = 8.6
-EcoSIM coupler     |  Depth[15] = 1.55 Depth_Reversed[15] = 8.5
-EcoSIM coupler     |  Depth[16] = 1.65 Depth_Reversed[16] = 8.4
-EcoSIM coupler     |  Depth[17] = 1.75 Depth_Reversed[17] = 8.3
-EcoSIM coupler     |  Depth[18] = 1.85 Depth_Reversed[18] = 8.2
-EcoSIM coupler     |  Depth[19] = 1.95 Depth_Reversed[19] = 8.1
-EcoSIM coupler     |  Depth[20] = 2.05 Depth_Reversed[20] = 8
-EcoSIM coupler     |  Depth[21] = 2.15 Depth_Reversed[21] = 7.9
-EcoSIM coupler     |  Depth[22] = 2.25 Depth_Reversed[22] = 7.8
-EcoSIM coupler     |  Depth[23] = 2.35 Depth_Reversed[23] = 7.7
-EcoSIM coupler     |  Depth[24] = 2.45 Depth_Reversed[24] = 7.6
-EcoSIM coupler     |  Depth[25] = 2.55 Depth_Reversed[25] = 7.5
-EcoSIM coupler     |  Depth[26] = 2.65 Depth_Reversed[26] = 7.4
-EcoSIM coupler     |  Depth[27] = 2.75 Depth_Reversed[27] = 7.3
-EcoSIM coupler     |  Depth[28] = 2.85 Depth_Reversed[28] = 7.2
-EcoSIM coupler     |  Depth[29] = 2.95 Depth_Reversed[29] = 7.1
-EcoSIM coupler     |  Depth[30] = 3.05 Depth_Reversed[30] = 7
-EcoSIM coupler     |  Depth[31] = 3.15 Depth_Reversed[31] = 6.9
-EcoSIM coupler     |  Depth[32] = 3.25 Depth_Reversed[32] = 6.8
-EcoSIM coupler     |  Depth[33] = 3.35 Depth_Reversed[33] = 6.7
-EcoSIM coupler     |  Depth[34] = 3.45 Depth_Reversed[34] = 6.6
-EcoSIM coupler     |  Depth[35] = 3.55 Depth_Reversed[35] = 6.5
-EcoSIM coupler     |  Depth[36] = 3.65 Depth_Reversed[36] = 6.4
-EcoSIM coupler     |  Depth[37] = 3.75 Depth_Reversed[37] = 6.3
-EcoSIM coupler     |  Depth[38] = 3.85 Depth_Reversed[38] = 6.2
-EcoSIM coupler     |  Depth[39] = 3.95 Depth_Reversed[39] = 6.1
-EcoSIM coupler     |  Depth[40] = 4.05 Depth_Reversed[40] = 6
-EcoSIM coupler     |  Depth[41] = 4.15 Depth_Reversed[41] = 5.9
-EcoSIM coupler     |  Depth[42] = 4.25 Depth_Reversed[42] = 5.8
-EcoSIM coupler     |  Depth[43] = 4.35 Depth_Reversed[43] = 5.7
-EcoSIM coupler     |  Depth[44] = 4.45 Depth_Reversed[44] = 5.6
-EcoSIM coupler     |  Depth[45] = 4.55 Depth_Reversed[45] = 5.5
-EcoSIM coupler     |  Depth[46] = 4.65 Depth_Reversed[46] = 5.4
-EcoSIM coupler     |  Depth[47] = 4.75 Depth_Reversed[47] = 5.3
-EcoSIM coupler     |  Depth[48] = 4.85 Depth_Reversed[48] = 5.2
-EcoSIM coupler     |  Depth[49] = 4.95 Depth_Reversed[49] = 5.1
-EcoSIM coupler     |  Depth[50] = 5.05 Depth_Reversed[50] = 5
-EcoSIM coupler     |  Depth[51] = 5.15 Depth_Reversed[51] = 4.9
-EcoSIM coupler     |  Depth[52] = 5.25 Depth_Reversed[52] = 4.8
-EcoSIM coupler     |  Depth[53] = 5.35 Depth_Reversed[53] = 4.7
-EcoSIM coupler     |  Depth[54] = 5.45 Depth_Reversed[54] = 4.6
-EcoSIM coupler     |  Depth[55] = 5.55 Depth_Reversed[55] = 4.5
-EcoSIM coupler     |  Depth[56] = 5.65 Depth_Reversed[56] = 4.4
-EcoSIM coupler     |  Depth[57] = 5.75 Depth_Reversed[57] = 4.3
-EcoSIM coupler     |  Depth[58] = 5.85 Depth_Reversed[58] = 4.2
-EcoSIM coupler     |  Depth[59] = 5.95 Depth_Reversed[59] = 4.1
-EcoSIM coupler     |  Depth[60] = 6.05 Depth_Reversed[60] = 4
-EcoSIM coupler     |  Depth[61] = 6.15 Depth_Reversed[61] = 3.9
-EcoSIM coupler     |  Depth[62] = 6.25 Depth_Reversed[62] = 3.8
-EcoSIM coupler     |  Depth[63] = 6.35 Depth_Reversed[63] = 3.7
-EcoSIM coupler     |  Depth[64] = 6.45 Depth_Reversed[64] = 3.6
-EcoSIM coupler     |  Depth[65] = 6.55 Depth_Reversed[65] = 3.5
-EcoSIM coupler     |  Depth[66] = 6.65 Depth_Reversed[66] = 3.4
-EcoSIM coupler     |  Depth[67] = 6.75 Depth_Reversed[67] = 3.3
-EcoSIM coupler     |  Depth[68] = 6.85 Depth_Reversed[68] = 3.2
-EcoSIM coupler     |  Depth[69] = 6.95 Depth_Reversed[69] = 3.1
-EcoSIM coupler     |  Depth[70] = 7.05 Depth_Reversed[70] = 3
-EcoSIM coupler     |  Depth[71] = 7.15 Depth_Reversed[71] = 2.9
-EcoSIM coupler     |  Depth[72] = 7.25 Depth_Reversed[72] = 2.8
-EcoSIM coupler     |  Depth[73] = 7.35 Depth_Reversed[73] = 2.7
-EcoSIM coupler     |  Depth[74] = 7.45 Depth_Reversed[74] = 2.6
-EcoSIM coupler     |  Depth[75] = 7.55 Depth_Reversed[75] = 2.5
-EcoSIM coupler     |  Depth[76] = 7.65 Depth_Reversed[76] = 2.4
-EcoSIM coupler     |  Depth[77] = 7.75 Depth_Reversed[77] = 2.3
-EcoSIM coupler     |  Depth[78] = 7.85 Depth_Reversed[78] = 2.2
-EcoSIM coupler     |  Depth[79] = 7.95 Depth_Reversed[79] = 2.1
-EcoSIM coupler     |  Depth[80] = 8.05 Depth_Reversed[80] = 2
-EcoSIM coupler     |  Depth[81] = 8.15 Depth_Reversed[81] = 1.9
-EcoSIM coupler     |  Depth[82] = 8.25 Depth_Reversed[82] = 1.8
-EcoSIM coupler     |  Depth[83] = 8.35 Depth_Reversed[83] = 1.7
-EcoSIM coupler     |  Depth[84] = 8.45 Depth_Reversed[84] = 1.6
-EcoSIM coupler     |  Depth[85] = 8.55 Depth_Reversed[85] = 1.5
-EcoSIM coupler     |  Depth[86] = 8.65 Depth_Reversed[86] = 1.4
-EcoSIM coupler     |  Depth[87] = 8.75 Depth_Reversed[87] = 1.3
-EcoSIM coupler     |  Depth[88] = 8.85 Depth_Reversed[88] = 1.2
-EcoSIM coupler     |  Depth[89] = 8.95 Depth_Reversed[89] = 1.1
-EcoSIM coupler     |  Depth[90] = 9.05 Depth_Reversed[90] = 1
-EcoSIM coupler     |  Depth[91] = 9.15 Depth_Reversed[91] = 0.9
-EcoSIM coupler     |  Depth[92] = 9.25 Depth_Reversed[92] = 0.8
-EcoSIM coupler     |  Depth[93] = 9.35 Depth_Reversed[93] = 0.7
-EcoSIM coupler     |  Depth[94] = 9.45 Depth_Reversed[94] = 0.6
-EcoSIM coupler     |  Depth[95] = 9.55 Depth_Reversed[95] = 0.5
-EcoSIM coupler     |  Depth[96] = 9.65 Depth_Reversed[96] = 0.4
-EcoSIM coupler     |  Depth[97] = 9.75 Depth_Reversed[97] = 0.3
-EcoSIM coupler     |  Depth[98] = 9.85 Depth_Reversed[98] = 0.2
-EcoSIM coupler     |  Depth[99] = 9.95 Depth_Reversed[99] = 0.1
-EcoSIM coupler     |  printing temperature:temp[0] = 273.65
-EcoSIM coupler     |  temp[1] = 273.65
-EcoSIM coupler     |  temp[2] = 273.65
-EcoSIM coupler     |  temp[3] = 273.65
-EcoSIM coupler     |  temp[4] = 273.65
-EcoSIM coupler     |  temp[5] = 273.65
-EcoSIM coupler     |  temp[6] = 273.65
-EcoSIM coupler     |  temp[7] = 273.65
-EcoSIM coupler     |  temp[8] = 273.65
-EcoSIM coupler     |  temp[9] = 273.65
-EcoSIM coupler     |  temp[10] = 273.65
-EcoSIM coupler     |  temp[11] = 273.65
-EcoSIM coupler     |  temp[12] = 273.65
-EcoSIM coupler     |  temp[13] = 273.65
-EcoSIM coupler     |  temp[14] = 273.65
-EcoSIM coupler     |  temp[15] = 273.65
-EcoSIM coupler     |  temp[16] = 273.65
-EcoSIM coupler     |  temp[17] = 273.65
-EcoSIM coupler     |  temp[18] = 273.65
-EcoSIM coupler     |  temp[19] = 273.65
-EcoSIM coupler     |  temp[20] = 273.65
-EcoSIM coupler     |  temp[21] = 273.65
-EcoSIM coupler     |  temp[22] = 273.65
-EcoSIM coupler     |  temp[23] = 273.65
-EcoSIM coupler     |  temp[24] = 273.65
-EcoSIM coupler     |  temp[25] = 273.65
-EcoSIM coupler     |  temp[26] = 273.65
-EcoSIM coupler     |  temp[27] = 273.65
-EcoSIM coupler     |  temp[28] = 273.65
-EcoSIM coupler     |  temp[29] = 273.65
-EcoSIM coupler     |  temp[30] = 273.65
-EcoSIM coupler     |  temp[31] = 273.65
-EcoSIM coupler     |  temp[32] = 273.65
-EcoSIM coupler     |  temp[33] = 273.65
-EcoSIM coupler     |  temp[34] = 273.65
-EcoSIM coupler     |  temp[35] = 273.65
-EcoSIM coupler     |  temp[36] = 273.65
-EcoSIM coupler     |  temp[37] = 273.65
-EcoSIM coupler     |  temp[38] = 273.65
-EcoSIM coupler     |  temp[39] = 273.65
-EcoSIM coupler     |  temp[40] = 273.65
-EcoSIM coupler     |  temp[41] = 273.65
-EcoSIM coupler     |  temp[42] = 273.65
-EcoSIM coupler     |  temp[43] = 273.65
-EcoSIM coupler     |  temp[44] = 273.65
-EcoSIM coupler     |  temp[45] = 273.65
-EcoSIM coupler     |  temp[46] = 273.65
-EcoSIM coupler     |  temp[47] = 273.65
-EcoSIM coupler     |  temp[48] = 273.65
-EcoSIM coupler     |  temp[49] = 273.65
-EcoSIM coupler     |  temp[50] = 273.65
-EcoSIM coupler     |  temp[51] = 273.65
-EcoSIM coupler     |  temp[52] = 273.65
-EcoSIM coupler     |  temp[53] = 273.65
-EcoSIM coupler     |  temp[54] = 273.65
-EcoSIM coupler     |  temp[55] = 273.65
-EcoSIM coupler     |  temp[56] = 273.65
-EcoSIM coupler     |  temp[57] = 273.65
-EcoSIM coupler     |  temp[58] = 273.65
-EcoSIM coupler     |  temp[59] = 273.65
-EcoSIM coupler     |  temp[60] = 273.65
-EcoSIM coupler     |  temp[61] = 273.65
-EcoSIM coupler     |  temp[62] = 273.65
-EcoSIM coupler     |  temp[63] = 273.65
-EcoSIM coupler     |  temp[64] = 273.65
-EcoSIM coupler     |  temp[65] = 273.65
-EcoSIM coupler     |  temp[66] = 273.65
-EcoSIM coupler     |  temp[67] = 273.65
-EcoSIM coupler     |  temp[68] = 273.65
-EcoSIM coupler     |  temp[69] = 273.65
-EcoSIM coupler     |  temp[70] = 273.65
-EcoSIM coupler     |  temp[71] = 273.65
-EcoSIM coupler     |  temp[72] = 273.65
-EcoSIM coupler     |  temp[73] = 273.65
-EcoSIM coupler     |  temp[74] = 273.65
-EcoSIM coupler     |  temp[75] = 273.65
-EcoSIM coupler     |  temp[76] = 273.65
-EcoSIM coupler     |  temp[77] = 273.65
-EcoSIM coupler     |  temp[78] = 273.65
-EcoSIM coupler     |  temp[79] = 273.65
-EcoSIM coupler     |  temp[80] = 273.65
-EcoSIM coupler     |  temp[81] = 273.65
-EcoSIM coupler     |  temp[82] = 273.65
-EcoSIM coupler     |  temp[83] = 273.65
-EcoSIM coupler     |  temp[84] = 273.65
-EcoSIM coupler     |  temp[85] = 273.65
-EcoSIM coupler     |  temp[86] = 273.65
-EcoSIM coupler     |  temp[87] = 273.65
-EcoSIM coupler     |  temp[88] = 273.65
-EcoSIM coupler     |  temp[89] = 273.65
-EcoSIM coupler     |  temp[90] = 273.65
-EcoSIM coupler     |  temp[91] = 273.65
-EcoSIM coupler     |  temp[92] = 273.65
-EcoSIM coupler     |  temp[93] = 273.65
-EcoSIM coupler     |  temp[94] = 273.65
-EcoSIM coupler     |  temp[95] = 273.65
-EcoSIM coupler     |  temp[96] = 273.65
-EcoSIM coupler     |  temp[97] = 273.65
-EcoSIM coupler     |  temp[98] = 273.65
-EcoSIM coupler     |  temp[99] = 273.65
 EcoSIM coupler     |  Column 0
 EcoSIM coupler     |  energy from dict: 0
 EcoSIM coupler     |  energy from State: 0
- In the driver....
- Data Transfer Finished
- In Run Surface Balance
- Bounds in GridMod
- NHW =            1
- NVN =            1
- NHE =            1
- NVS =            1
- Calculating J parameters:
- JX =            1
- JY =            1
- JX0 =            1
- JY0 =            1
- ncols =            1
- grid size
- JX0=           1 JY0=           1 JZ=         100
- Starting loop: 
- Stage surface phys model
- RunSurfacePhysModel           1           1 M=           1   273.14999999999998     
- TKX1 is zero, resetting
- Timestep in EcoSIM:    1.0000000000000000       hr
- Finished Subroutine RunEcoSIMSurfaceBalance
- Surface energy After running RunEcoSIMSurfaceBalance
- leaving surface energy balance
- Copying back
- finished copying back in driver
-EcoSIM coupler     |   ATS timestep: 1 s
+EcoSIM coupler     |   ATS timestep: 3600 s
 EcoSIM coupler     |   Total energy from EcoSIM: 688.872 MJ
 EcoSIM coupler     |   Rate to conserve flux from EcoSIM: 0.191353 MJ/s
-EcoSIM coupler     |   Rate to conserve total energy from EcoSIM: 688.872 MJ/s
+EcoSIM coupler     |   Rate to conserve total energy from EcoSIM: 0.191353 MJ/s
 EcoSIM coupler     |   testing using flux conservation: 
 permafrost surface |  ----------------------------------------------------------------
-permafrost surface |  Advancing: t0 = 0 t1 = 1 h = 1
+permafrost surface |  Advancing: t0 = 0 t1 = 3600 h = 3600
 permafrost surface |  ----------------------------------------------------------------
-permafrost surface |  step 0 T = 0 [sec]  dT = 1
+permafrost surface |  step 0 T = 0 [sec]  dT = 3600
 permafrost surface |  preconditioner lag is 0 out of 0
 surface energy     |    Checking admissibility...
 surface energy     |      Admissible T? (min/max): 273.65,  273.65
@@ -1961,7 +1525,7 @@ surface flow       |  Modifying predictor:
 surface energy     |  Modifying predictor:
 surface energy     |     Updating BCs.
 surface flow       |  ----------------------------------------------------------------
-surface flow       |  Residual calculation: t0 = 0 t1 = 1 h = 1
+surface flow       |  Residual calculation: t0 = 0 t1 = 3600 h = 3600
 surface flow       |   Debug Cells Information:
 surface flow       |  Cell c(0) centroid = 0.5 0.5
 surface flow       |    neighbor face(0) [dir=1] centroid = 0.5 0
@@ -1992,7 +1556,7 @@ surface flow       |  res (acc)  (    0):        0.              0.             
 surface flow       |    source   (    0):    3.000000e-07
 surface flow       |  res (src)  (    0):   -1.665251e-02        0.              0.              0.              0.      
 surface energy     |  ----------------------------------------------------------------
-surface energy     |  Residual calculation: t0 = 0 t1 = 1 h = 1
+surface energy     |  Residual calculation: t0 = 0 t1 = 3600 h = 3600
 surface energy     |   Debug Cells Information:
 surface energy     |  Cell c(0) centroid = 0.5 0.5
 surface energy     |    neighbor face(0) [dir=1] centroid = 0.5 0
@@ -2004,8 +1568,8 @@ surface energy     |  T_new      (    0):      273.650000      273.650000      2
 surface energy     |     Updating BCs.
 surface energy     |  BCs        (    0):  2(       0.      ) 2(       0.      ) 2(       0.      ) 2(       0.      )
 surface energy     |  In Functional Residual
-surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
-surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
+surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f29e00,node=0x2f2afb0,strong_count=2,weak_count=0}
+surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f29e00,node=0x2f2afb0,strong_count=2,weak_count=0}
 surface energy     |  K          (    0):    1.000000e-21
 surface energy     |  res (diff) (    0):        0.              0.              0.              0.              0.      
 surface energy     |  e_old      (    0):        0.      
@@ -2022,26 +1586,26 @@ surface energy     |   Adding advection to subsurface
 surface energy     |  res (s-s ad(    0):        -0.191734
 surface energy     |  res (src)  (    0):        -0.191734
 subsurface energy  |  In Functional Residual
-subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
-subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
+subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f26670,node=0x2f28b00,strong_count=2,weak_count=0}
+subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f26670,node=0x2f28b00,strong_count=2,weak_count=0}
 subsurface energy  |   In AddSourcessurface flow       |  ENorm (Infnorm) of: surface-water_content: 
 surface flow       |    ENorm (cell) = 0[-1] (0)
 surface flow       |    ENorm (boundary_face) = 0[-1] (0)
 surface energy     |  ENorm (Infnorm) of: surface-energy: 
 surface energy     |    ENorm (cell) = 0[-1] (0)
 surface energy     |    ENorm (boundary_face) = 0[-1] (0)
-permafrost surface |  0: error(res) = 0.837443
+permafrost surface |  0: error(res) = 3014.8
 permafrost surface |  0: L2 error(res) = 0.192456
 permafrost surface |  Updating preconditioner.
-permafrost surface |   Precon update at t = 1
-surface flow       |  Precon update at t = 1
+permafrost surface |   Precon update at t = 3600
+surface flow       |  Precon update at t = 3600
 surface flow       |     Updating permeability?  Updating permeability derivatives? TRUE.
 surface flow       |     Updating BCs.
 surface flow       |      dwc_dp (    0):        5.660279
 surface flow       |      dh_dp  (    0):    1.019784e-04
 surface flow       |    Right scaling TPFA
 surface flow       |      dh_dp  (    0):        0.      
-surface energy     |  Precon update at t = 1
+surface energy     |  Precon update at t = 3600
 surface energy     |     Updating BCs.
 surface energy     |      de_dT  (    0):        0.      
 surface energy     |    dQ_ext/dT(    0):        0.      
@@ -2052,20 +1616,20 @@ surface flow       |    r_ps     (    0):        0.              0.             
 surface flow       |    r_Ts     (    0):        0.              0.              0.              0.              0.      
 permafrost surface |   Residuals (subsurface):
 permafrost surface |   Precon applying coupled subsurface operator.
-inverse::GMRES     |   Converged (relative res), itr=1 ||r||=0.000158985 ||r0||=15878.2
+inverse::GMRES     |   Converged (relative res), itr=5 ||r||=0.00313902 ||r0||=18836.6
 permafrost surface |   PC * residuals (surface):
-surface flow       |    PC * r_ps(    0):     -133.315844        0.              0.              0.              0.      
-surface flow       |    PC * r_Ts(    0):   -15878.199730        0.              0.              0.              0.      
+surface flow       |    PC * r_ps(    0):    -4440.237600        0.              0.              0.              0.      
+surface flow       |    PC * r_Ts(    0):   -18553.877577        0.              0.              0.              0.      
 permafrost surface |   NKA * PC * residuals (surface):
-surface flow       |    NKA*PC*r_(    0):     -133.315844        0.              0.              0.              0.      
-surface flow       |    NKA*PC*r_(    0):   -15878.199730        0.              0.              0.              0.      
+surface flow       |    NKA*PC*r_(    0):    -4440.237600        0.              0.              0.              0.      
+surface flow       |    NKA*PC*r_(    0):   -18553.877577        0.              0.              0.              0.      
 permafrost surface |   NKA * PC * residuals (subsurface):
-surface flow       |  Linf, L2 pressure correction (cell) = 133.316, 133.316
+surface flow       |  Linf, L2 pressure correction (cell) = 4440.24, 4440.24
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
-surface flow       |  Linf, L2 pressure correction (cell) = 133.316, 133.316
+surface flow       |  Linf, L2 pressure correction (cell) = 4440.24, 4440.24
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
 surface flow       |  p_limit_ = -1
-surface flow       |  Linf, L2 pressure correction (cell) = 133.316, 133.316
+surface flow       |  Linf, L2 pressure correction (cell) = 4440.24, 4440.24
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  Restarting NKA, NKA step does not improve error or resulted in inadmissible solution, on NKA itr = 1
@@ -2074,9 +1638,9 @@ permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 surface energy     |    Checking admissibility...
-surface energy     |      Admissible T? (min/max): 289.156,  289.156
+surface energy     |      Admissible T? (min/max): 291.769,  291.769
 surface flow       |  ----------------------------------------------------------------
-surface flow       |  Residual calculation: t0 = 0 t1 = 1 h = 1
+surface flow       |  Residual calculation: t0 = 0 t1 = 3600 h = 3600
 surface flow       |   Debug Cells Information:
 surface flow       |  Cell c(0) centroid = 0.5 0.5
 surface flow       |    neighbor face(0) [dir=1] centroid = 0.5 0
@@ -2084,7 +1648,7 @@ surface flow       |    neighbor face(1) [dir=1] centroid = 1 0.5
 surface flow       |    neighbor face(2) [dir=-1] centroid = 0.5 1
 surface flow       |    neighbor face(3) [dir=-1] centroid = 0 0.5
 surface flow       |  p_old      (    0):    42485.100000    42485.100000    42485.100000    42485.100000    42485.100000
-surface flow       |  p_new      (    0):    42485.230191    42485.100000    42485.100000    42485.100000    42485.100000
+surface flow       |  p_new      (    0):    42489.436170    42485.100000    42485.100000    42485.100000    42485.100000
 surface flow       |  z          (    0):       10.000000       10.000000       10.000000       10.000000       10.000000
 surface flow       |  h_old      (    0):        0.              0.              0.              0.              0.      
 surface flow       |  h_new      (    0):        0.              0.              0.              0.              0.      
@@ -2107,7 +1671,7 @@ surface flow       |  res (acc)  (    0):        0.              0.             
 surface flow       |    source   (    0):    3.000000e-07
 surface flow       |  res (src)  (    0):   -1.665251e-02        0.              0.              0.              0.      
 surface energy     |  ----------------------------------------------------------------
-surface energy     |  Residual calculation: t0 = 0 t1 = 1 h = 1
+surface energy     |  Residual calculation: t0 = 0 t1 = 3600 h = 3600
 surface energy     |   Debug Cells Information:
 surface energy     |  Cell c(0) centroid = 0.5 0.5
 surface energy     |    neighbor face(0) [dir=1] centroid = 0.5 0
@@ -2115,48 +1679,48 @@ surface energy     |    neighbor face(1) [dir=1] centroid = 1 0.5
 surface energy     |    neighbor face(2) [dir=-1] centroid = 0.5 1
 surface energy     |    neighbor face(3) [dir=-1] centroid = 0 0.5
 surface energy     |  T_old      (    0):      273.650000      273.650000      273.650000      273.650000      273.650000
-surface energy     |  T_new      (    0):      289.156054      289.156054      289.156054      289.156054      289.156054
+surface energy     |  T_new      (    0):      291.769021      291.769021      291.769021      291.769021      291.769021
 surface energy     |     Updating BCs.
 surface energy     |  BCs        (    0):  2(       0.      ) 2(       0.      ) 2(       0.      ) 2(       0.      )
 surface energy     |  In Functional Residual
-surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
-surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
+surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f29e00,node=0x2f2afb0,strong_count=2,weak_count=0}
+surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f29e00,node=0x2f2afb0,strong_count=2,weak_count=0}
 surface energy     |  K          (    0):    1.000000e-21
 surface energy     |  res (diff) (    0):        0.              0.              0.              0.              0.      
 surface energy     |  e_old      (    0):        0.      
 surface energy     |  e_new      (    0):        0.      
 surface energy     |  res (acc)  (    0):        0.      
-surface energy     |  BCs        (    0):  1(   1.216460e-03) 1(   1.216460e-03) 1(   1.216460e-03) 1(   1.216460e-03)
+surface energy     |  BCs        (    0):  1(   1.415046e-03) 1(   1.415046e-03) 1(   1.415046e-03) 1(   1.415046e-03)
 surface energy     |   adv flux  (    0):         0.              0.              0.              0.      
-surface energy     |   enthalpy  (    0):    1.216460e-03    1.216460e-03    1.216460e-03    1.216460e-03    1.216460e-03
+surface energy     |   enthalpy  (    0):    1.415046e-03    1.415046e-03    1.415046e-03    1.415046e-03    1.415046e-03
 surface energy     |  res (adv)  (    0):        0.              0.              0.              0.              0.      
-surface energy     |   In AddSourcessource: 0.190419Adding external source term
-surface energy     |    Q_ext    (    0):         0.190419
-surface energy     |  res (src)  (    0):        -0.190419
+surface energy     |   In AddSourcessource: 0.189554Adding external source term
+surface energy     |    Q_ext    (    0):         0.189554
+surface energy     |  res (src)  (    0):        -0.189554
 surface energy     |   Adding advection to subsurface
-surface energy     |  res (s-s ad(    0):        -0.190399
-surface energy     |  res (src)  (    0):        -0.190399
+surface energy     |  res (s-s ad(    0):        -0.189530
+surface energy     |  res (src)  (    0):        -0.189530
 In Functional Residual
-subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
-subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
+subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f26670,node=0x2f28b00,strong_count=2,weak_count=0}
+subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f26670,node=0x2f28b00,strong_count=2,weak_count=0}
 subsurface energy  |   In AddSourcessurface flow       |  ENorm (Infnorm) of: surface-water_content: 
 surface flow       |    ENorm (cell) = 0[-1] (0)
 surface flow       |    ENorm (boundary_face) = 0[-1] (0)
 surface energy     |  ENorm (Infnorm) of: surface-energy: 
 surface energy     |    ENorm (cell) = 0[-1] (0)
 surface energy     |    ENorm (boundary_face) = 0[-1] (0)
-permafrost surface |  1: backtrack 5: error(res) = 0.830792
-permafrost surface |  1: backtrack 5: L2 error(res) = 0.191772
+permafrost surface |  1: backtrack 5: error(res) = 2977.2
+permafrost surface |  1: backtrack 5: L2 error(res) = 0.192179
 permafrost surface |  Updating preconditioner.
-permafrost surface |   Precon update at t = 1
-surface flow       |  Precon update at t = 1
+permafrost surface |   Precon update at t = 3600
+surface flow       |  Precon update at t = 3600
 surface flow       |     Updating permeability?  Updating permeability derivatives? TRUE.
 surface flow       |     Updating BCs.
 surface flow       |      dwc_dp (    0):        5.660279
-surface flow       |      dh_dp  (    0):    1.020895e-04
+surface flow       |      dh_dp  (    0):    1.021220e-04
 surface flow       |    Right scaling TPFA
 surface flow       |      dh_dp  (    0):        0.      
-surface energy     |  Precon update at t = 1
+surface energy     |  Precon update at t = 3600
 surface energy     |     Updating BCs.
 surface energy     |      de_dT  (    0):        0.      
 surface energy     |    dQ_ext/dT(    0):        0.      
@@ -2167,20 +1731,20 @@ surface flow       |    r_ps     (    0):        0.              0.             
 surface flow       |    r_Ts     (    0):        0.              0.              0.              0.              0.      
 permafrost surface |   Residuals (subsurface):
 permafrost surface |   Precon applying coupled subsurface operator.
-inverse::GMRES     |   Converged (relative res), itr=1 ||r||=0.000157813 ||r0||=15752.1
+inverse::GMRES     |   Converged (relative res), itr=5 ||r||=0.00309989 ||r0||=18601.6
 permafrost surface |   PC * residuals (surface):
-surface flow       |    PC * r_ps(    0):      -82.732821        0.              0.              0.              0.      
-surface flow       |    PC * r_Ts(    0):   -15752.092185        0.              0.              0.              0.      
+surface flow       |    PC * r_ps(    0):     2989.159098        0.              0.              0.              0.      
+surface flow       |    PC * r_Ts(    0):   -18322.419166        0.              0.              0.              0.      
 permafrost surface |   NKA * PC * residuals (surface):
-surface flow       |    NKA*PC*r_(    0):      -82.732821        0.              0.              0.              0.      
-surface flow       |    NKA*PC*r_(    0):   -15752.092185        0.              0.              0.              0.      
+surface flow       |    NKA*PC*r_(    0):     2989.159098        0.              0.              0.              0.      
+surface flow       |    NKA*PC*r_(    0):   -18322.419166        0.              0.              0.              0.      
 permafrost surface |   NKA * PC * residuals (subsurface):
-surface flow       |  Linf, L2 pressure correction (cell) = 82.7328, 82.7328
+surface flow       |  Linf, L2 pressure correction (cell) = 2989.16, 2989.16
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
-surface flow       |  Linf, L2 pressure correction (cell) = 82.7328, 82.7328
+surface flow       |  Linf, L2 pressure correction (cell) = 2989.16, 2989.16
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
 surface flow       |  p_limit_ = -1
-surface flow       |  Linf, L2 pressure correction (cell) = 82.7328, 82.7328
+surface flow       |  Linf, L2 pressure correction (cell) = 2989.16, 2989.16
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  Restarting NKA, NKA step does not improve error or resulted in inadmissible solution, on NKA itr = 1
@@ -2189,9 +1753,9 @@ permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 surface energy     |    Checking admissibility...
-surface energy     |      Admissible T? (min/max): 304.539,  304.539
+surface energy     |      Admissible T? (min/max): 309.662,  309.662
 surface flow       |  ----------------------------------------------------------------
-surface flow       |  Residual calculation: t0 = 0 t1 = 1 h = 1
+surface flow       |  Residual calculation: t0 = 0 t1 = 3600 h = 3600
 surface flow       |   Debug Cells Information:
 surface flow       |  Cell c(0) centroid = 0.5 0.5
 surface flow       |    neighbor face(0) [dir=1] centroid = 0.5 0
@@ -2199,7 +1763,7 @@ surface flow       |    neighbor face(1) [dir=1] centroid = 1 0.5
 surface flow       |    neighbor face(2) [dir=-1] centroid = 0.5 1
 surface flow       |    neighbor face(3) [dir=-1] centroid = 0 0.5
 surface flow       |  p_old      (    0):    42485.100000    42485.100000    42485.100000    42485.100000    42485.100000
-surface flow       |  p_new      (    0):    42485.310985    42485.100000    42485.100000    42485.100000    42485.100000
+surface flow       |  p_new      (    0):    42486.517069    42485.100000    42485.100000    42485.100000    42485.100000
 surface flow       |  z          (    0):       10.000000       10.000000       10.000000       10.000000       10.000000
 surface flow       |  h_old      (    0):        0.              0.              0.              0.              0.      
 surface flow       |  h_new      (    0):        0.              0.              0.              0.              0.      
@@ -2222,7 +1786,7 @@ surface flow       |  res (acc)  (    0):        0.              0.             
 surface flow       |    source   (    0):    3.000000e-07
 surface flow       |  res (src)  (    0):   -1.665251e-02        0.              0.              0.              0.      
 surface energy     |  ----------------------------------------------------------------
-surface energy     |  Residual calculation: t0 = 0 t1 = 1 h = 1
+surface energy     |  Residual calculation: t0 = 0 t1 = 3600 h = 3600
 surface energy     |   Debug Cells Information:
 surface energy     |  Cell c(0) centroid = 0.5 0.5
 surface energy     |    neighbor face(0) [dir=1] centroid = 0.5 0
@@ -2230,48 +1794,48 @@ surface energy     |    neighbor face(1) [dir=1] centroid = 1 0.5
 surface energy     |    neighbor face(2) [dir=-1] centroid = 0.5 1
 surface energy     |    neighbor face(3) [dir=-1] centroid = 0 0.5
 surface energy     |  T_old      (    0):      273.650000      273.650000      273.650000      273.650000      273.650000
-surface energy     |  T_new      (    0):      304.538957      304.538957      304.538957      304.538957      304.538957
+surface energy     |  T_new      (    0):      309.662009      309.662009      309.662009      309.662009      309.662009
 surface energy     |     Updating BCs.
 surface energy     |  BCs        (    0):  2(       0.      ) 2(       0.      ) 2(       0.      ) 2(       0.      )
 surface energy     |  In Functional Residual
-surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
-surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
+surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f29e00,node=0x2f2afb0,strong_count=2,weak_count=0}
+surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f29e00,node=0x2f2afb0,strong_count=2,weak_count=0}
 surface energy     |  K          (    0):    1.000000e-21
 surface energy     |  res (diff) (    0):        0.              0.              0.              0.              0.      
 surface energy     |  e_old      (    0):        0.      
 surface energy     |  e_new      (    0):        0.      
 surface energy     |  res (acc)  (    0):        0.      
-surface energy     |  BCs        (    0):  1(   2.385561e-03) 1(   2.385561e-03) 1(   2.385561e-03) 1(   2.385561e-03)
+surface energy     |  BCs        (    0):  1(   2.774913e-03) 1(   2.774913e-03) 1(   2.774913e-03) 1(   2.774913e-03)
 surface energy     |   adv flux  (    0):         0.              0.              0.              0.      
-surface energy     |   enthalpy  (    0):    2.385561e-03    2.385561e-03    2.385561e-03    2.385561e-03    2.385561e-03
+surface energy     |   enthalpy  (    0):    2.774913e-03    2.774913e-03    2.774913e-03    2.774913e-03    2.774913e-03
 surface energy     |  res (adv)  (    0):        0.              0.              0.              0.              0.      
-surface energy     |   In AddSourcessource: 0.181712Adding external source term
-surface energy     |    Q_ext    (    0):         0.181712
-surface energy     |  res (src)  (    0):        -0.181712
+surface energy     |   In AddSourcessource: 0.176594Adding external source term
+surface energy     |    Q_ext    (    0):         0.176594
+surface energy     |  res (src)  (    0):        -0.176594
 surface energy     |   Adding advection to subsurface
-surface energy     |  res (s-s ad(    0):        -0.181673
-surface energy     |  res (src)  (    0):        -0.181673
+surface energy     |  res (s-s ad(    0):        -0.176548
+surface energy     |  res (src)  (    0):        -0.176548
 In Functional Residual
-subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
-subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
+subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f26670,node=0x2f28b00,strong_count=2,weak_count=0}
+subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f26670,node=0x2f28b00,strong_count=2,weak_count=0}
 subsurface energy  |   In AddSourcessurface flow       |  ENorm (Infnorm) of: surface-water_content: 
 surface flow       |    ENorm (cell) = 0[-1] (0)
 surface flow       |    ENorm (boundary_face) = 0[-1] (0)
 surface energy     |  ENorm (Infnorm) of: surface-energy: 
 surface energy     |    ENorm (cell) = 0[-1] (0)
 surface energy     |    ENorm (boundary_face) = 0[-1] (0)
-permafrost surface |  2: backtrack 5: error(res) = 0.791868
-permafrost surface |  2: backtrack 5: L2 error(res) = 0.218735
+permafrost surface |  2: backtrack 5: error(res) = 2770.16
+permafrost surface |  2: backtrack 5: L2 error(res) = 0.255451
 permafrost surface |  Updating preconditioner.
-permafrost surface |   Precon update at t = 1
-surface flow       |  Precon update at t = 1
+permafrost surface |   Precon update at t = 3600
+surface flow       |  Precon update at t = 3600
 surface flow       |     Updating permeability?  Updating permeability derivatives? TRUE.
 surface flow       |     Updating BCs.
 surface flow       |      dwc_dp (    0):        5.660279
-surface flow       |      dh_dp  (    0):    1.022098e-04
+surface flow       |      dh_dp  (    0):    1.021721e-04
 surface flow       |    Right scaling TPFA
 surface flow       |      dh_dp  (    0):        0.      
-surface energy     |  Precon update at t = 1
+surface energy     |  Precon update at t = 3600
 surface energy     |     Updating BCs.
 surface energy     |      de_dT  (    0):        0.      
 surface energy     |    dQ_ext/dT(    0):        0.      
@@ -2282,20 +1846,20 @@ surface flow       |    r_ps     (    0):        0.              0.             
 surface flow       |    r_Ts     (    0):        0.              0.              0.              0.              0.      
 permafrost surface |   Residuals (subsurface):
 permafrost surface |   Precon applying coupled subsurface operator.
-inverse::GMRES     |   Converged (relative res), itr=1 ||r||=0.000151521 ||r0||=15014.1
+inverse::GMRES     |   Converged (relative res), itr=5 ||r||=0.0028844 ||r0||=17309.2
 permafrost surface |   PC * residuals (surface):
-surface flow       |    PC * r_ps(    0):      -46.680037        0.              0.              0.              0.      
-surface flow       |    PC * r_Ts(    0):   -15014.082602        0.              0.              0.              0.      
+surface flow       |    PC * r_ps(    0):    41690.060338        0.              0.              0.              0.      
+surface flow       |    PC * r_Ts(    0):   -17049.019761        0.              0.              0.              0.      
 permafrost surface |   NKA * PC * residuals (surface):
-surface flow       |    NKA*PC*r_(    0):      -46.680037        0.              0.              0.              0.      
-surface flow       |    NKA*PC*r_(    0):   -15014.082602        0.              0.              0.              0.      
+surface flow       |    NKA*PC*r_(    0):    41690.060338        0.              0.              0.              0.      
+surface flow       |    NKA*PC*r_(    0):   -17049.019761        0.              0.              0.              0.      
 permafrost surface |   NKA * PC * residuals (subsurface):
-surface flow       |  Linf, L2 pressure correction (cell) = 46.68, 46.68
+surface flow       |  Linf, L2 pressure correction (cell) = 41690.1, 41690.1
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
-surface flow       |  Linf, L2 pressure correction (cell) = 46.68, 46.68
+surface flow       |  Linf, L2 pressure correction (cell) = 41690.1, 41690.1
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
 surface flow       |  p_limit_ = -1
-surface flow       |  Linf, L2 pressure correction (cell) = 46.68, 46.68
+surface flow       |  Linf, L2 pressure correction (cell) = 41690.1, 41690.1
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  Restarting NKA, NKA step does not improve error or resulted in inadmissible solution, on NKA itr = 1
@@ -2304,9 +1868,9 @@ permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 surface energy     |    Checking admissibility...
-surface energy     |      Admissible T? (min/max): 319.201,  319.201
+surface energy     |      Admissible T? (min/max): 326.311,  326.311
 surface flow       |  ----------------------------------------------------------------
-surface flow       |  Residual calculation: t0 = 0 t1 = 1 h = 1
+surface flow       |  Residual calculation: t0 = 0 t1 = 3600 h = 3600
 surface flow       |   Debug Cells Information:
 surface flow       |  Cell c(0) centroid = 0.5 0.5
 surface flow       |    neighbor face(0) [dir=1] centroid = 0.5 0
@@ -2314,7 +1878,7 @@ surface flow       |    neighbor face(1) [dir=1] centroid = 1 0.5
 surface flow       |    neighbor face(2) [dir=-1] centroid = 0.5 1
 surface flow       |    neighbor face(3) [dir=-1] centroid = 0 0.5
 surface flow       |  p_old      (    0):    42485.100000    42485.100000    42485.100000    42485.100000    42485.100000
-surface flow       |  p_new      (    0):    42485.356571    42485.100000    42485.100000    42485.100000    42485.100000
+surface flow       |  p_new      (    0):    42445.804119    42485.100000    42485.100000    42485.100000    42485.100000
 surface flow       |  z          (    0):       10.000000       10.000000       10.000000       10.000000       10.000000
 surface flow       |  h_old      (    0):        0.              0.              0.              0.              0.      
 surface flow       |  h_new      (    0):        0.              0.              0.              0.              0.      
@@ -2337,7 +1901,7 @@ surface flow       |  res (acc)  (    0):        0.              0.             
 surface flow       |    source   (    0):    3.000000e-07
 surface flow       |  res (src)  (    0):   -1.665251e-02        0.              0.              0.              0.      
 surface energy     |  ----------------------------------------------------------------
-surface energy     |  Residual calculation: t0 = 0 t1 = 1 h = 1
+surface energy     |  Residual calculation: t0 = 0 t1 = 3600 h = 3600
 surface energy     |   Debug Cells Information:
 surface energy     |  Cell c(0) centroid = 0.5 0.5
 surface energy     |    neighbor face(0) [dir=1] centroid = 0.5 0
@@ -2345,48 +1909,48 @@ surface energy     |    neighbor face(1) [dir=1] centroid = 1 0.5
 surface energy     |    neighbor face(2) [dir=-1] centroid = 0.5 1
 surface energy     |    neighbor face(3) [dir=-1] centroid = 0 0.5
 surface energy     |  T_old      (    0):      273.650000      273.650000      273.650000      273.650000      273.650000
-surface energy     |  T_new      (    0):      319.201147      319.201147      319.201147      319.201147      319.201147
+surface energy     |  T_new      (    0):      326.311442      326.311442      326.311442      326.311442      326.311442
 surface energy     |     Updating BCs.
 surface energy     |  BCs        (    0):  2(       0.      ) 2(       0.      ) 2(       0.      ) 2(       0.      )
 surface energy     |  In Functional Residual
-surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
-surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
+surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f29e00,node=0x2f2afb0,strong_count=2,weak_count=0}
+surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f29e00,node=0x2f2afb0,strong_count=2,weak_count=0}
 surface energy     |  K          (    0):    1.000000e-21
 surface energy     |  res (diff) (    0):        0.              0.              0.              0.              0.      
 surface energy     |  e_old      (    0):        0.      
 surface energy     |  e_new      (    0):        0.      
 surface energy     |  res (acc)  (    0):        0.      
-surface energy     |  BCs        (    0):  1(   3.499887e-03) 1(   3.499887e-03) 1(   3.499887e-03) 1(   3.499887e-03)
+surface energy     |  BCs        (    0):  1(   4.040270e-03) 1(   4.040270e-03) 1(   4.040270e-03) 1(   4.040270e-03)
 surface energy     |   adv flux  (    0):         0.              0.              0.              0.      
-surface energy     |   enthalpy  (    0):    3.499887e-03    3.499887e-03    3.499887e-03    3.499887e-03    3.499887e-03
+surface energy     |   enthalpy  (    0):    4.040270e-03    4.040270e-03    4.040270e-03    4.040270e-03    4.040270e-03
 surface energy     |  res (adv)  (    0):        0.              0.              0.              0.              0.      
-surface energy     |   In AddSourcessource: 0.163249Adding external source term
-surface energy     |    Q_ext    (    0):         0.163249
-surface energy     |  res (src)  (    0):        -0.163249
+surface energy     |   In AddSourcessource: 0.149392Adding external source term
+surface energy     |    Q_ext    (    0):         0.149392
+surface energy     |  res (src)  (    0):        -0.149392
 surface energy     |   Adding advection to subsurface
-surface energy     |  res (s-s ad(    0):        -0.163190
-surface energy     |  res (src)  (    0):        -0.163190
+surface energy     |  res (s-s ad(    0):        -0.149325
+surface energy     |  res (src)  (    0):        -0.149325
 In Functional Residual
-subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
-subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
+subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f26670,node=0x2f28b00,strong_count=2,weak_count=0}
+subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f26670,node=0x2f28b00,strong_count=2,weak_count=0}
 subsurface energy  |   In AddSourcessurface flow       |  ENorm (Infnorm) of: surface-water_content: 
 surface flow       |    ENorm (cell) = 0[-1] (0)
 surface flow       |    ENorm (boundary_face) = 0[-1] (0)
 surface energy     |  ENorm (Infnorm) of: surface-energy: 
 surface energy     |    ENorm (cell) = 0[-1] (0)
 surface energy     |    ENorm (boundary_face) = 0[-1] (0)
-permafrost surface |  3: backtrack 5: error(res) = 0.710369
-permafrost surface |  3: backtrack 5: L2 error(res) = 0.394099
+permafrost surface |  3: backtrack 5: error(res) = 2339.4
+permafrost surface |  3: backtrack 5: L2 error(res) = 0.572
 permafrost surface |  Updating preconditioner.
-permafrost surface |   Precon update at t = 1
-surface flow       |  Precon update at t = 1
+permafrost surface |   Precon update at t = 3600
+surface flow       |  Precon update at t = 3600
 surface flow       |     Updating permeability?  Updating permeability derivatives? TRUE.
 surface flow       |     Updating BCs.
 surface flow       |      dwc_dp (    0):        5.660279
-surface flow       |      dh_dp  (    0):    1.019102e-04
+surface flow       |      dh_dp  (    0):    1.015011e-04
 surface flow       |    Right scaling TPFA
 surface flow       |      dh_dp  (    0):        0.      
-surface energy     |  Precon update at t = 1
+surface energy     |  Precon update at t = 3600
 surface energy     |     Updating BCs.
 surface energy     |      de_dT  (    0):        0.      
 surface energy     |    dQ_ext/dT(    0):        0.      
@@ -2397,20 +1961,20 @@ surface flow       |    r_ps     (    0):        0.              0.             
 surface flow       |    r_Ts     (    0):        0.              0.              0.              0.              0.      
 permafrost surface |   Residuals (subsurface):
 permafrost surface |   Precon applying coupled subsurface operator.
-inverse::GMRES     |   Converged (relative res), itr=1 ||r||=0.000139679 ||r0||=13468.8
+inverse::GMRES     |   Converged (relative res), itr=5 ||r||=0.0024362 ||r0||=14623
 permafrost surface |   PC * residuals (surface):
-surface flow       |    PC * r_ps(    0):       -7.654404        0.              0.              0.              0.      
-surface flow       |    PC * r_Ts(    0):   -13468.836861        0.              0.              0.              0.      
+surface flow       |    PC * r_ps(    0):   136536.029647        0.              0.              0.              0.      
+surface flow       |    PC * r_Ts(    0):   -14401.701536        0.              0.              0.              0.      
 permafrost surface |   NKA * PC * residuals (surface):
-surface flow       |    NKA*PC*r_(    0):       -7.654404        0.              0.              0.              0.      
-surface flow       |    NKA*PC*r_(    0):   -13468.836861        0.              0.              0.              0.      
+surface flow       |    NKA*PC*r_(    0):   136536.029647        0.              0.              0.              0.      
+surface flow       |    NKA*PC*r_(    0):   -14401.701536        0.              0.              0.              0.      
 permafrost surface |   NKA * PC * residuals (subsurface):
-surface flow       |  Linf, L2 pressure correction (cell) = 7.6544, 7.6544
+surface flow       |  Linf, L2 pressure correction (cell) = 136536, 136536
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
-surface flow       |  Linf, L2 pressure correction (cell) = 7.6544, 7.6544
+surface flow       |  Linf, L2 pressure correction (cell) = 136536, 136536
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
 surface flow       |  p_limit_ = -1
-surface flow       |  Linf, L2 pressure correction (cell) = 7.6544, 7.6544
+surface flow       |  Linf, L2 pressure correction (cell) = 136536, 136536
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  Restarting NKA, NKA step does not improve error or resulted in inadmissible solution, on NKA itr = 1
@@ -2420,9 +1984,9 @@ permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 surface energy     |    Checking admissibility...
-surface energy     |      Admissible T? (min/max): 322.489,  322.489
+surface energy     |      Admissible T? (min/max): 329.827,  329.827
 surface flow       |  ----------------------------------------------------------------
-surface flow       |  Residual calculation: t0 = 0 t1 = 1 h = 1
+surface flow       |  Residual calculation: t0 = 0 t1 = 3600 h = 3600
 surface flow       |   Debug Cells Information:
 surface flow       |  Cell c(0) centroid = 0.5 0.5
 surface flow       |    neighbor face(0) [dir=1] centroid = 0.5 0
@@ -2430,7 +1994,7 @@ surface flow       |    neighbor face(1) [dir=1] centroid = 1 0.5
 surface flow       |    neighbor face(2) [dir=-1] centroid = 0.5 1
 surface flow       |    neighbor face(3) [dir=-1] centroid = 0 0.5
 surface flow       |  p_old      (    0):    42485.100000    42485.100000    42485.100000    42485.100000    42485.100000
-surface flow       |  p_new      (    0):    42485.358440    42485.100000    42485.100000    42485.100000    42485.100000
+surface flow       |  p_new      (    0):    42412.470128    42485.100000    42485.100000    42485.100000    42485.100000
 surface flow       |  z          (    0):       10.000000       10.000000       10.000000       10.000000       10.000000
 surface flow       |  h_old      (    0):        0.              0.              0.              0.              0.      
 surface flow       |  h_new      (    0):        0.              0.              0.              0.              0.      
@@ -2453,7 +2017,7 @@ surface flow       |  res (acc)  (    0):        0.              0.             
 surface flow       |    source   (    0):    3.000000e-07
 surface flow       |  res (src)  (    0):   -1.665251e-02        0.              0.              0.              0.      
 surface energy     |  ----------------------------------------------------------------
-surface energy     |  Residual calculation: t0 = 0 t1 = 1 h = 1
+surface energy     |  Residual calculation: t0 = 0 t1 = 3600 h = 3600
 surface energy     |   Debug Cells Information:
 surface energy     |  Cell c(0) centroid = 0.5 0.5
 surface energy     |    neighbor face(0) [dir=1] centroid = 0.5 0
@@ -2461,48 +2025,48 @@ surface energy     |    neighbor face(1) [dir=1] centroid = 1 0.5
 surface energy     |    neighbor face(2) [dir=-1] centroid = 0.5 1
 surface energy     |    neighbor face(3) [dir=-1] centroid = 0 0.5
 surface energy     |  T_old      (    0):      273.650000      273.650000      273.650000      273.650000      273.650000
-surface energy     |  T_new      (    0):      322.489437      322.489437      322.489437      322.489437      322.489437
+surface energy     |  T_new      (    0):      329.827482      329.827482      329.827482      329.827482      329.827482
 surface energy     |     Updating BCs.
 surface energy     |  BCs        (    0):  2(       0.      ) 2(       0.      ) 2(       0.      ) 2(       0.      )
 surface energy     |  In Functional Residual
-surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
-surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
+surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f29e00,node=0x2f2afb0,strong_count=2,weak_count=0}
+surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f29e00,node=0x2f2afb0,strong_count=2,weak_count=0}
 surface energy     |  K          (    0):    1.000000e-21
 surface energy     |  res (diff) (    0):        0.              0.              0.              0.              0.      
 surface energy     |  e_old      (    0):        0.      
 surface energy     |  e_new      (    0):        0.      
 surface energy     |  res (acc)  (    0):        0.      
-surface energy     |  BCs        (    0):  1(   3.749797e-03) 1(   3.749797e-03) 1(   3.749797e-03) 1(   3.749797e-03)
+surface energy     |  BCs        (    0):  1(   4.307489e-03) 1(   4.307489e-03) 1(   4.307489e-03) 1(   4.307489e-03)
 surface energy     |   adv flux  (    0):         0.              0.              0.              0.      
-surface energy     |   enthalpy  (    0):    3.749797e-03    3.749797e-03    3.749797e-03    3.749797e-03    3.749797e-03
+surface energy     |   enthalpy  (    0):    4.307489e-03    4.307489e-03    4.307489e-03    4.307489e-03    4.307489e-03
 surface energy     |  res (adv)  (    0):        0.              0.              0.              0.              0.      
-surface energy     |   In AddSourcessource: 0.157289Adding external source term
-surface energy     |    Q_ext    (    0):         0.157289
-surface energy     |  res (src)  (    0):        -0.157289
+surface energy     |   In AddSourcessource: 0.141073Adding external source term
+surface energy     |    Q_ext    (    0):         0.141073
+surface energy     |  res (src)  (    0):        -0.141073
 surface energy     |   Adding advection to subsurface
-surface energy     |  res (s-s ad(    0):        -0.157226
-surface energy     |  res (src)  (    0):        -0.157226
+surface energy     |  res (s-s ad(    0):        -0.141001
+surface energy     |  res (src)  (    0):        -0.141001
 In Functional Residual
-subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
-subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
+subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f26670,node=0x2f28b00,strong_count=2,weak_count=0}
+subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f26670,node=0x2f28b00,strong_count=2,weak_count=0}
 subsurface energy  |   In AddSourcessurface flow       |  ENorm (Infnorm) of: surface-water_content: 
 surface flow       |    ENorm (cell) = 0[-1] (0)
 surface flow       |    ENorm (boundary_face) = 0[-1] (0)
 surface energy     |  ENorm (Infnorm) of: surface-energy: 
 surface energy     |    ENorm (cell) = 0[-1] (0)
 surface energy     |    ENorm (boundary_face) = 0[-1] (0)
-permafrost surface |  4: backtrack 6: error(res) = 0.684146
-permafrost surface |  4: backtrack 6: L2 error(res) = 0.467844
+permafrost surface |  4: backtrack 6: error(res) = 2207.95
+permafrost surface |  4: backtrack 6: L2 error(res) = 0.68756
 permafrost surface |  Updating preconditioner.
-permafrost surface |   Precon update at t = 1
-surface flow       |  Precon update at t = 1
+permafrost surface |   Precon update at t = 3600
+surface flow       |  Precon update at t = 3600
 surface flow       |     Updating permeability?  Updating permeability derivatives? TRUE.
 surface flow       |     Updating BCs.
 surface flow       |      dwc_dp (    0):        5.660279
-surface flow       |      dh_dp  (    0):    1.017469e-04
+surface flow       |      dh_dp  (    0):    1.012171e-04
 surface flow       |    Right scaling TPFA
 surface flow       |      dh_dp  (    0):        0.      
-surface energy     |  Precon update at t = 1
+surface energy     |  Precon update at t = 3600
 surface energy     |     Updating BCs.
 surface energy     |      de_dT  (    0):        0.      
 surface energy     |    dQ_ext/dT(    0):        0.      
@@ -2513,20 +2077,20 @@ surface flow       |    r_ps     (    0):        0.              0.             
 surface flow       |    r_Ts     (    0):        0.              0.              0.              0.              0.      
 permafrost surface |   Residuals (subsurface):
 permafrost surface |   Precon applying coupled subsurface operator.
-inverse::GMRES     |   Converged (relative res), itr=1 ||r||=0.000136172 ||r0||=12971.6
+inverse::GMRES     |   Converged (relative res), itr=5 ||r||=0.0022995 ||r0||=13804
 permafrost surface |   PC * residuals (surface):
-surface flow       |    PC * r_ps(    0):        3.255257        0.              0.              0.              0.      
-surface flow       |    PC * r_Ts(    0):   -12971.638517        0.              0.              0.              0.      
+surface flow       |    PC * r_ps(    0):   167350.143683        0.              0.              0.              0.      
+surface flow       |    PC * r_Ts(    0):   -13594.473585        0.              0.              0.              0.      
 permafrost surface |   NKA * PC * residuals (surface):
-surface flow       |    NKA*PC*r_(    0):        3.255257        0.              0.              0.              0.      
-surface flow       |    NKA*PC*r_(    0):   -12971.638517        0.              0.              0.              0.      
+surface flow       |    NKA*PC*r_(    0):   167350.143683        0.              0.              0.              0.      
+surface flow       |    NKA*PC*r_(    0):   -13594.473585        0.              0.              0.              0.      
 permafrost surface |   NKA * PC * residuals (subsurface):
-surface flow       |  Linf, L2 pressure correction (cell) = 3.25526, 3.25526
+surface flow       |  Linf, L2 pressure correction (cell) = 167350, 167350
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
-surface flow       |  Linf, L2 pressure correction (cell) = 3.25526, 3.25526
+surface flow       |  Linf, L2 pressure correction (cell) = 167350, 167350
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
 surface flow       |  p_limit_ = -1
-surface flow       |  Linf, L2 pressure correction (cell) = 3.25526, 3.25526
+surface flow       |  Linf, L2 pressure correction (cell) = 167350, 167350
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  Restarting NKA, NKA step does not improve error or resulted in inadmissible solution, on NKA itr = 1
@@ -2535,10 +2099,13 @@ permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
+permafrost surface |  PK subsurface energy is not admissible.
+permafrost surface |  PK subsurface energy is not admissible.
+permafrost surface |  PK subsurface energy is not admissible.
 surface energy     |    Checking admissibility...
-surface energy     |      Admissible T? (min/max): 325.656,  325.656
+surface energy     |      Admissible T? (min/max): 329.879,  329.879
 surface flow       |  ----------------------------------------------------------------
-surface flow       |  Residual calculation: t0 = 0 t1 = 1 h = 1
+surface flow       |  Residual calculation: t0 = 0 t1 = 3600 h = 3600
 surface flow       |   Debug Cells Information:
 surface flow       |  Cell c(0) centroid = 0.5 0.5
 surface flow       |    neighbor face(0) [dir=1] centroid = 0.5 0
@@ -2546,7 +2113,7 @@ surface flow       |    neighbor face(1) [dir=1] centroid = 1 0.5
 surface flow       |    neighbor face(2) [dir=-1] centroid = 0.5 1
 surface flow       |    neighbor face(3) [dir=-1] centroid = 0 0.5
 surface flow       |  p_old      (    0):    42485.100000    42485.100000    42485.100000    42485.100000    42485.100000
-surface flow       |  p_new      (    0):    42485.357645    42485.100000    42485.100000    42485.100000    42485.100000
+surface flow       |  p_new      (    0):    42411.831738    42485.100000    42485.100000    42485.100000    42485.100000
 surface flow       |  z          (    0):       10.000000       10.000000       10.000000       10.000000       10.000000
 surface flow       |  h_old      (    0):        0.              0.              0.              0.              0.      
 surface flow       |  h_new      (    0):        0.              0.              0.              0.              0.      
@@ -2569,7 +2136,7 @@ surface flow       |  res (acc)  (    0):        0.              0.             
 surface flow       |    source   (    0):    3.000000e-07
 surface flow       |  res (src)  (    0):   -1.665251e-02        0.              0.              0.              0.      
 surface energy     |  ----------------------------------------------------------------
-surface energy     |  Residual calculation: t0 = 0 t1 = 1 h = 1
+surface energy     |  Residual calculation: t0 = 0 t1 = 3600 h = 3600
 surface energy     |   Debug Cells Information:
 surface energy     |  Cell c(0) centroid = 0.5 0.5
 surface energy     |    neighbor face(0) [dir=1] centroid = 0.5 0
@@ -2577,48 +2144,48 @@ surface energy     |    neighbor face(1) [dir=1] centroid = 1 0.5
 surface energy     |    neighbor face(2) [dir=-1] centroid = 0.5 1
 surface energy     |    neighbor face(3) [dir=-1] centroid = 0 0.5
 surface energy     |  T_old      (    0):      273.650000      273.650000      273.650000      273.650000      273.650000
-surface energy     |  T_new      (    0):      325.656341      325.656341      325.656341      325.656341      325.656341
+surface energy     |  T_new      (    0):      329.879341      329.879341      329.879341      329.879341      329.879341
 surface energy     |     Updating BCs.
 surface energy     |  BCs        (    0):  2(       0.      ) 2(       0.      ) 2(       0.      ) 2(       0.      )
 surface energy     |  In Functional Residual
-surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
-surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
+surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f29e00,node=0x2f2afb0,strong_count=2,weak_count=0}
+surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f29e00,node=0x2f2afb0,strong_count=2,weak_count=0}
 surface energy     |  K          (    0):    1.000000e-21
 surface energy     |  res (diff) (    0):        0.              0.              0.              0.              0.      
 surface energy     |  e_old      (    0):        0.      
 surface energy     |  e_new      (    0):        0.      
 surface energy     |  res (acc)  (    0):        0.      
-surface energy     |  BCs        (    0):  1(   3.990482e-03) 1(   3.990482e-03) 1(   3.990482e-03) 1(   3.990482e-03)
+surface energy     |  BCs        (    0):  1(   4.311430e-03) 1(   4.311430e-03) 1(   4.311430e-03) 1(   4.311430e-03)
 surface energy     |   adv flux  (    0):         0.              0.              0.              0.      
-surface energy     |   enthalpy  (    0):    3.990482e-03    3.990482e-03    3.990482e-03    3.990482e-03    3.990482e-03
+surface energy     |   enthalpy  (    0):    4.311430e-03    4.311430e-03    4.311430e-03    4.311430e-03    4.311430e-03
 surface energy     |  res (adv)  (    0):        0.              0.              0.              0.              0.      
-surface energy     |   In AddSourcessource: 0.150784Adding external source term
-surface energy     |    Q_ext    (    0):         0.150784
-surface energy     |  res (src)  (    0):        -0.150784
+surface energy     |   In AddSourcessource: 0.140942Adding external source term
+surface energy     |    Q_ext    (    0):         0.140942
+surface energy     |  res (src)  (    0):        -0.140942
 surface energy     |   Adding advection to subsurface
-surface energy     |  res (s-s ad(    0):        -0.150717
-surface energy     |  res (src)  (    0):        -0.150717
+surface energy     |  res (s-s ad(    0):        -0.140870
+surface energy     |  res (src)  (    0):        -0.140870
 In Functional Residual
-subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
-subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
+subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f26670,node=0x2f28b00,strong_count=2,weak_count=0}
+subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f26670,node=0x2f28b00,strong_count=2,weak_count=0}
 subsurface energy  |   In AddSourcessurface flow       |  ENorm (Infnorm) of: surface-water_content: 
 surface flow       |    ENorm (cell) = 0[-1] (0)
 surface flow       |    ENorm (boundary_face) = 0[-1] (0)
 surface energy     |  ENorm (Infnorm) of: surface-energy: 
 surface energy     |    ENorm (cell) = 0[-1] (0)
 surface energy     |    ENorm (boundary_face) = 0[-1] (0)
-permafrost surface |  5: backtrack 6: error(res) = 0.655549
-permafrost surface |  5: backtrack 6: L2 error(res) = 0.553391
+permafrost surface |  5: backtrack 9: error(res) = 2205.89
+permafrost surface |  5: backtrack 9: L2 error(res) = 0.68941
 permafrost surface |  Updating preconditioner.
-permafrost surface |   Precon update at t = 1
-surface flow       |  Precon update at t = 1
+permafrost surface |   Precon update at t = 3600
+surface flow       |  Precon update at t = 3600
 surface flow       |     Updating permeability?  Updating permeability derivatives? TRUE.
 surface flow       |     Updating BCs.
 surface flow       |      dwc_dp (    0):        5.660279
-surface flow       |      dh_dp  (    0):    1.015478e-04
+surface flow       |      dh_dp  (    0):    1.012124e-04
 surface flow       |    Right scaling TPFA
 surface flow       |      dh_dp  (    0):        0.      
-surface energy     |  Precon update at t = 1
+surface energy     |  Precon update at t = 3600
 surface energy     |     Updating BCs.
 surface energy     |      de_dT  (    0):        0.      
 surface energy     |    dQ_ext/dT(    0):        0.      
@@ -2629,20 +2196,20 @@ surface flow       |    r_ps     (    0):        0.              0.             
 surface flow       |    r_Ts     (    0):        0.              0.              0.              0.              0.      
 permafrost surface |   Residuals (subsurface):
 permafrost surface |   Precon applying coupled subsurface operator.
-inverse::GMRES     |   Converged (relative res), itr=1 ||r||=0.000132498 ||r0||=12429.4
+inverse::GMRES     |   Converged (relative res), itr=5 ||r||=0.00229736 ||r0||=13791.2
 permafrost surface |   PC * residuals (surface):
-surface flow       |    PC * r_ps(    0):       14.874017        0.              0.              0.              0.      
-surface flow       |    PC * r_Ts(    0):   -12429.428723        0.              0.              0.              0.      
+surface flow       |    PC * r_ps(    0):   167839.775736        0.              0.              0.              0.      
+surface flow       |    PC * r_Ts(    0):   -13581.815578        0.              0.              0.              0.      
 permafrost surface |   NKA * PC * residuals (surface):
-surface flow       |    NKA*PC*r_(    0):       14.874017        0.              0.              0.              0.      
-surface flow       |    NKA*PC*r_(    0):   -12429.428723        0.              0.              0.              0.      
+surface flow       |    NKA*PC*r_(    0):   167839.775736        0.              0.              0.              0.      
+surface flow       |    NKA*PC*r_(    0):   -13581.815578        0.              0.              0.              0.      
 permafrost surface |   NKA * PC * residuals (subsurface):
-surface flow       |  Linf, L2 pressure correction (cell) = 14.874, 14.874
+surface flow       |  Linf, L2 pressure correction (cell) = 167840, 167840
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
-surface flow       |  Linf, L2 pressure correction (cell) = 14.874, 14.874
+surface flow       |  Linf, L2 pressure correction (cell) = 167840, 167840
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
 surface flow       |  p_limit_ = -1
-surface flow       |  Linf, L2 pressure correction (cell) = 14.874, 14.874
+surface flow       |  Linf, L2 pressure correction (cell) = 167840, 167840
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  Restarting NKA, NKA step does not improve error or resulted in inadmissible solution, on NKA itr = 1
@@ -2651,10 +2218,13 @@ permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
+permafrost surface |  PK subsurface energy is not admissible.
+permafrost surface |  PK subsurface energy is not admissible.
+permafrost surface |  PK subsurface energy is not admissible.
 surface energy     |    Checking admissibility...
-surface energy     |      Admissible T? (min/max): 328.691,  328.691
+surface energy     |      Admissible T? (min/max): 329.931,  329.931
 surface flow       |  ----------------------------------------------------------------
-surface flow       |  Residual calculation: t0 = 0 t1 = 1 h = 1
+surface flow       |  Residual calculation: t0 = 0 t1 = 3600 h = 3600
 surface flow       |   Debug Cells Information:
 surface flow       |  Cell c(0) centroid = 0.5 0.5
 surface flow       |    neighbor face(0) [dir=1] centroid = 0.5 0
@@ -2662,7 +2232,7 @@ surface flow       |    neighbor face(1) [dir=1] centroid = 1 0.5
 surface flow       |    neighbor face(2) [dir=-1] centroid = 0.5 1
 surface flow       |    neighbor face(3) [dir=-1] centroid = 0 0.5
 surface flow       |  p_old      (    0):    42485.100000    42485.100000    42485.100000    42485.100000    42485.100000
-surface flow       |  p_new      (    0):    42485.354014    42485.100000    42485.100000    42485.100000    42485.100000
+surface flow       |  p_new      (    0):    42411.191480    42485.100000    42485.100000    42485.100000    42485.100000
 surface flow       |  z          (    0):       10.000000       10.000000       10.000000       10.000000       10.000000
 surface flow       |  h_old      (    0):        0.              0.              0.              0.              0.      
 surface flow       |  h_new      (    0):        0.              0.              0.              0.              0.      
@@ -2685,7 +2255,7 @@ surface flow       |  res (acc)  (    0):        0.              0.             
 surface flow       |    source   (    0):    3.000000e-07
 surface flow       |  res (src)  (    0):   -1.665251e-02        0.              0.              0.              0.      
 surface energy     |  ----------------------------------------------------------------
-surface energy     |  Residual calculation: t0 = 0 t1 = 1 h = 1
+surface energy     |  Residual calculation: t0 = 0 t1 = 3600 h = 3600
 surface energy     |   Debug Cells Information:
 surface energy     |  Cell c(0) centroid = 0.5 0.5
 surface energy     |    neighbor face(0) [dir=1] centroid = 0.5 0
@@ -2693,48 +2263,48 @@ surface energy     |    neighbor face(1) [dir=1] centroid = 1 0.5
 surface energy     |    neighbor face(2) [dir=-1] centroid = 0.5 1
 surface energy     |    neighbor face(3) [dir=-1] centroid = 0 0.5
 surface energy     |  T_old      (    0):      273.650000      273.650000      273.650000      273.650000      273.650000
-surface energy     |  T_new      (    0):      328.690870      328.690870      328.690870      328.690870      328.690870
+surface energy     |  T_new      (    0):      329.931152      329.931152      329.931152      329.931152      329.931152
 surface energy     |     Updating BCs.
 surface energy     |  BCs        (    0):  2(       0.      ) 2(       0.      ) 2(       0.      ) 2(       0.      )
 surface energy     |  In Functional Residual
-surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
-surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
+surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f29e00,node=0x2f2afb0,strong_count=2,weak_count=0}
+surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f29e00,node=0x2f2afb0,strong_count=2,weak_count=0}
 surface energy     |  K          (    0):    1.000000e-21
 surface energy     |  res (diff) (    0):        0.              0.              0.              0.              0.      
 surface energy     |  e_old      (    0):        0.      
 surface energy     |  e_new      (    0):        0.      
 surface energy     |  res (acc)  (    0):        0.      
-surface energy     |  BCs        (    0):  1(   4.221106e-03) 1(   4.221106e-03) 1(   4.221106e-03) 1(   4.221106e-03)
+surface energy     |  BCs        (    0):  1(   4.315368e-03) 1(   4.315368e-03) 1(   4.315368e-03) 1(   4.315368e-03)
 surface energy     |   adv flux  (    0):         0.              0.              0.              0.      
-surface energy     |   enthalpy  (    0):    4.221106e-03    4.221106e-03    4.221106e-03    4.221106e-03    4.221106e-03
+surface energy     |   enthalpy  (    0):    4.315368e-03    4.315368e-03    4.315368e-03    4.315368e-03    4.315368e-03
 surface energy     |  res (adv)  (    0):        0.              0.              0.              0.              0.      
-surface energy     |   In AddSourcessource: 0.143779Adding external source term
-surface energy     |    Q_ext    (    0):         0.143779
-surface energy     |  res (src)  (    0):        -0.143779
+surface energy     |   In AddSourcessource: 0.140811Adding external source term
+surface energy     |    Q_ext    (    0):         0.140811
+surface energy     |  res (src)  (    0):        -0.140811
 surface energy     |   Adding advection to subsurface
-surface energy     |  res (s-s ad(    0):        -0.143709
-surface energy     |  res (src)  (    0):        -0.143709
+surface energy     |  res (s-s ad(    0):        -0.140740
+surface energy     |  res (src)  (    0):        -0.140740
 In Functional Residual
-subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
-subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
+subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f26670,node=0x2f28b00,strong_count=2,weak_count=0}
+subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f26670,node=0x2f28b00,strong_count=2,weak_count=0}
 subsurface energy  |   In AddSourcessurface flow       |  ENorm (Infnorm) of: surface-water_content: 
 surface flow       |    ENorm (cell) = 0[-1] (0)
 surface flow       |    ENorm (boundary_face) = 0[-1] (0)
 surface energy     |  ENorm (Infnorm) of: surface-energy: 
 surface energy     |    ENorm (cell) = 0[-1] (0)
 surface energy     |    ENorm (boundary_face) = 0[-1] (0)
-permafrost surface |  6: backtrack 6: error(res) = 0.624779
-permafrost surface |  6: backtrack 6: L2 error(res) = 0.649958
+permafrost surface |  6: backtrack 9: error(res) = 2203.82
+permafrost surface |  6: backtrack 9: L2 error(res) = 0.691264
 permafrost surface |  Updating preconditioner.
-permafrost surface |   Precon update at t = 1
-surface flow       |  Precon update at t = 1
+permafrost surface |   Precon update at t = 3600
+surface flow       |  Precon update at t = 3600
 surface flow       |     Updating permeability?  Updating permeability derivatives? TRUE.
 surface flow       |     Updating BCs.
 surface flow       |      dwc_dp (    0):        5.660279
-surface flow       |      dh_dp  (    0):    1.013153e-04
+surface flow       |      dh_dp  (    0):    1.012078e-04
 surface flow       |    Right scaling TPFA
 surface flow       |      dh_dp  (    0):        0.      
-surface energy     |  Precon update at t = 1
+surface energy     |  Precon update at t = 3600
 surface energy     |     Updating BCs.
 surface energy     |      de_dT  (    0):        0.      
 surface energy     |    dQ_ext/dT(    0):        0.      
@@ -2745,20 +2315,20 @@ surface flow       |    r_ps     (    0):        0.              0.             
 surface flow       |    r_Ts     (    0):        0.              0.              0.              0.              0.      
 permafrost surface |   Residuals (subsurface):
 permafrost surface |   Precon applying coupled subsurface operator.
-inverse::GMRES     |   Converged (relative res), itr=1 ||r||=0.00012871 ||r0||=11846
+inverse::GMRES     |   Converged (relative res), itr=5 ||r||=0.00229521 ||r0||=13778.3
 permafrost surface |   PC * residuals (surface):
-surface flow       |    PC * r_ps(    0):       27.196130        0.              0.              0.              0.      
-surface flow       |    PC * r_Ts(    0):   -11846.023265        0.              0.              0.              0.      
+surface flow       |    PC * r_ps(    0):   168330.027558        0.              0.              0.              0.      
+surface flow       |    PC * r_Ts(    0):   -13569.146565        0.              0.              0.              0.      
 permafrost surface |   NKA * PC * residuals (surface):
-surface flow       |    NKA*PC*r_(    0):       27.196130        0.              0.              0.              0.      
-surface flow       |    NKA*PC*r_(    0):   -11846.023265        0.              0.              0.              0.      
+surface flow       |    NKA*PC*r_(    0):   168330.027558        0.              0.              0.              0.      
+surface flow       |    NKA*PC*r_(    0):   -13569.146565        0.              0.              0.              0.      
 permafrost surface |   NKA * PC * residuals (subsurface):
-surface flow       |  Linf, L2 pressure correction (cell) = 27.1961, 27.1961
+surface flow       |  Linf, L2 pressure correction (cell) = 168330, 168330
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
-surface flow       |  Linf, L2 pressure correction (cell) = 27.1961, 27.1961
+surface flow       |  Linf, L2 pressure correction (cell) = 168330, 168330
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
 surface flow       |  p_limit_ = -1
-surface flow       |  Linf, L2 pressure correction (cell) = 27.1961, 27.1961
+surface flow       |  Linf, L2 pressure correction (cell) = 168330, 168330
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  Restarting NKA, NKA step does not improve error or resulted in inadmissible solution, on NKA itr = 1
@@ -2768,10 +2338,12 @@ permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
+permafrost surface |  PK subsurface energy is not admissible.
+permafrost surface |  PK subsurface energy is not admissible.
 surface energy     |    Checking admissibility...
-surface energy     |      Admissible T? (min/max): 329.414,  329.414
+surface energy     |      Admissible T? (min/max): 329.983,  329.983
 surface flow       |  ----------------------------------------------------------------
-surface flow       |  Residual calculation: t0 = 0 t1 = 1 h = 1
+surface flow       |  Residual calculation: t0 = 0 t1 = 3600 h = 3600
 surface flow       |   Debug Cells Information:
 surface flow       |  Cell c(0) centroid = 0.5 0.5
 surface flow       |    neighbor face(0) [dir=1] centroid = 0.5 0
@@ -2779,7 +2351,7 @@ surface flow       |    neighbor face(1) [dir=1] centroid = 1 0.5
 surface flow       |    neighbor face(2) [dir=-1] centroid = 0.5 1
 surface flow       |    neighbor face(3) [dir=-1] centroid = 0 0.5
 surface flow       |  p_old      (    0):    42485.100000    42485.100000    42485.100000    42485.100000    42485.100000
-surface flow       |  p_new      (    0):    42485.352354    42485.100000    42485.100000    42485.100000    42485.100000
+surface flow       |  p_new      (    0):    42410.549352    42485.100000    42485.100000    42485.100000    42485.100000
 surface flow       |  z          (    0):       10.000000       10.000000       10.000000       10.000000       10.000000
 surface flow       |  h_old      (    0):        0.              0.              0.              0.              0.      
 surface flow       |  h_new      (    0):        0.              0.              0.              0.              0.      
@@ -2802,7 +2374,7 @@ surface flow       |  res (acc)  (    0):        0.              0.             
 surface flow       |    source   (    0):    3.000000e-07
 surface flow       |  res (src)  (    0):   -1.665251e-02        0.              0.              0.              0.      
 surface energy     |  ----------------------------------------------------------------
-surface energy     |  Residual calculation: t0 = 0 t1 = 1 h = 1
+surface energy     |  Residual calculation: t0 = 0 t1 = 3600 h = 3600
 surface energy     |   Debug Cells Information:
 surface energy     |  Cell c(0) centroid = 0.5 0.5
 surface energy     |    neighbor face(0) [dir=1] centroid = 0.5 0
@@ -2810,48 +2382,48 @@ surface energy     |    neighbor face(1) [dir=1] centroid = 1 0.5
 surface energy     |    neighbor face(2) [dir=-1] centroid = 0.5 1
 surface energy     |    neighbor face(3) [dir=-1] centroid = 0 0.5
 surface energy     |  T_old      (    0):      273.650000      273.650000      273.650000      273.650000      273.650000
-surface energy     |  T_new      (    0):      329.413894      329.413894      329.413894      329.413894      329.413894
+surface energy     |  T_new      (    0):      329.982914      329.982914      329.982914      329.982914      329.982914
 surface energy     |     Updating BCs.
 surface energy     |  BCs        (    0):  2(       0.      ) 2(       0.      ) 2(       0.      ) 2(       0.      )
 surface energy     |  In Functional Residual
-surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
-surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
+surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f29e00,node=0x2f2afb0,strong_count=2,weak_count=0}
+surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f29e00,node=0x2f2afb0,strong_count=2,weak_count=0}
 surface energy     |  K          (    0):    1.000000e-21
 surface energy     |  res (diff) (    0):        0.              0.              0.              0.              0.      
 surface energy     |  e_old      (    0):        0.      
 surface energy     |  e_new      (    0):        0.      
 surface energy     |  res (acc)  (    0):        0.      
-surface energy     |  BCs        (    0):  1(   4.276056e-03) 1(   4.276056e-03) 1(   4.276056e-03) 1(   4.276056e-03)
+surface energy     |  BCs        (    0):  1(   4.319301e-03) 1(   4.319301e-03) 1(   4.319301e-03) 1(   4.319301e-03)
 surface energy     |   adv flux  (    0):         0.              0.              0.              0.      
-surface energy     |   enthalpy  (    0):    4.276056e-03    4.276056e-03    4.276056e-03    4.276056e-03    4.276056e-03
+surface energy     |   enthalpy  (    0):    4.319301e-03    4.319301e-03    4.319301e-03    4.319301e-03    4.319301e-03
 surface energy     |  res (adv)  (    0):        0.              0.              0.              0.              0.      
-surface energy     |   In AddSourcessource: 0.141992Adding external source term
-surface energy     |    Q_ext    (    0):         0.141992
-surface energy     |  res (src)  (    0):        -0.141992
+surface energy     |   In AddSourcessource: 0.140681Adding external source term
+surface energy     |    Q_ext    (    0):         0.140681
+surface energy     |  res (src)  (    0):        -0.140681
 surface energy     |   Adding advection to subsurface
-surface energy     |  res (s-s ad(    0):        -0.141920
-surface energy     |  res (src)  (    0):        -0.141920
+surface energy     |  res (s-s ad(    0):        -0.140609
+surface energy     |  res (src)  (    0):        -0.140609
 In Functional Residual
-subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
-subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
+subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f26670,node=0x2f28b00,strong_count=2,weak_count=0}
+subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f26670,node=0x2f28b00,strong_count=2,weak_count=0}
 subsurface energy  |   In AddSourcessurface flow       |  ENorm (Infnorm) of: surface-water_content: 
 surface flow       |    ENorm (cell) = 0[-1] (0)
 surface flow       |    ENorm (boundary_face) = 0[-1] (0)
 surface energy     |  ENorm (Infnorm) of: surface-energy: 
 surface energy     |    ENorm (cell) = 0[-1] (0)
 surface energy     |    ENorm (boundary_face) = 0[-1] (0)
-permafrost surface |  7: backtrack 7: error(res) = 0.616929
-permafrost surface |  7: backtrack 7: L2 error(res) = 0.675214
+permafrost surface |  7: backtrack 9: error(res) = 2201.76
+permafrost surface |  7: backtrack 9: L2 error(res) = 0.69312
 permafrost surface |  Updating preconditioner.
-permafrost surface |   Precon update at t = 1
-surface flow       |  Precon update at t = 1
+permafrost surface |   Precon update at t = 3600
+surface flow       |  Precon update at t = 3600
 surface flow       |     Updating permeability?  Updating permeability derivatives? TRUE.
 surface flow       |     Updating BCs.
 surface flow       |      dwc_dp (    0):        5.660279
-surface flow       |      dh_dp  (    0):    1.012535e-04
+surface flow       |      dh_dp  (    0):    1.012031e-04
 surface flow       |    Right scaling TPFA
 surface flow       |      dh_dp  (    0):        0.      
-surface energy     |  Precon update at t = 1
+surface energy     |  Precon update at t = 3600
 surface energy     |     Updating BCs.
 surface energy     |      de_dT  (    0):        0.      
 surface energy     |    dQ_ext/dT(    0):        0.      
@@ -2862,20 +2434,20 @@ surface flow       |    r_ps     (    0):        0.              0.             
 surface flow       |    r_Ts     (    0):        0.              0.              0.              0.              0.      
 permafrost surface |   Residuals (subsurface):
 permafrost surface |   Precon applying coupled subsurface operator.
-inverse::GMRES     |   Converged (relative res), itr=1 ||r||=0.000127771 ||r0||=11697.2
+inverse::GMRES     |   Converged (relative res), itr=5 ||r||=0.00229306 ||r0||=13765.5
 permafrost surface |   PC * residuals (surface):
-surface flow       |    PC * r_ps(    0):       30.321688        0.              0.              0.              0.      
-surface flow       |    PC * r_Ts(    0):   -11697.172229        0.              0.              0.              0.      
+surface flow       |    PC * r_ps(    0):   168820.897428        0.              0.              0.              0.      
+surface flow       |    PC * r_Ts(    0):   -13556.466594        0.              0.              0.              0.      
 permafrost surface |   NKA * PC * residuals (surface):
-surface flow       |    NKA*PC*r_(    0):       30.321688        0.              0.              0.              0.      
-surface flow       |    NKA*PC*r_(    0):   -11697.172229        0.              0.              0.              0.      
+surface flow       |    NKA*PC*r_(    0):   168820.897428        0.              0.              0.              0.      
+surface flow       |    NKA*PC*r_(    0):   -13556.466594        0.              0.              0.              0.      
 permafrost surface |   NKA * PC * residuals (subsurface):
-surface flow       |  Linf, L2 pressure correction (cell) = 30.3217, 30.3217
+surface flow       |  Linf, L2 pressure correction (cell) = 168821, 168821
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
-surface flow       |  Linf, L2 pressure correction (cell) = 30.3217, 30.3217
+surface flow       |  Linf, L2 pressure correction (cell) = 168821, 168821
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
 surface flow       |  p_limit_ = -1
-surface flow       |  Linf, L2 pressure correction (cell) = 30.3217, 30.3217
+surface flow       |  Linf, L2 pressure correction (cell) = 168821, 168821
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  Restarting NKA, NKA step does not improve error or resulted in inadmissible solution, on NKA itr = 1
@@ -2886,10 +2458,12 @@ permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
+permafrost surface |  PK subsurface energy is not admissible.
+permafrost surface |  PK subsurface energy is not admissible.
 surface energy     |    Checking admissibility...
-surface energy     |      Admissible T? (min/max): 329.592,  329.592
+surface energy     |      Admissible T? (min/max): 329.996,  329.996
 surface flow       |  ----------------------------------------------------------------
-surface flow       |  Residual calculation: t0 = 0 t1 = 1 h = 1
+surface flow       |  Residual calculation: t0 = 0 t1 = 3600 h = 3600
 surface flow       |   Debug Cells Information:
 surface flow       |  Cell c(0) centroid = 0.5 0.5
 surface flow       |    neighbor face(0) [dir=1] centroid = 0.5 0
@@ -2897,7 +2471,7 @@ surface flow       |    neighbor face(1) [dir=1] centroid = 1 0.5
 surface flow       |    neighbor face(2) [dir=-1] centroid = 0.5 1
 surface flow       |    neighbor face(3) [dir=-1] centroid = 0 0.5
 surface flow       |  p_old      (    0):    42485.100000    42485.100000    42485.100000    42485.100000    42485.100000
-surface flow       |  p_new      (    0):    42485.351891    42485.100000    42485.100000    42485.100000    42485.100000
+surface flow       |  p_new      (    0):    42410.388351    42485.100000    42485.100000    42485.100000    42485.100000
 surface flow       |  z          (    0):       10.000000       10.000000       10.000000       10.000000       10.000000
 surface flow       |  h_old      (    0):        0.              0.              0.              0.              0.      
 surface flow       |  h_new      (    0):        0.              0.              0.              0.              0.      
@@ -2920,7 +2494,7 @@ surface flow       |  res (acc)  (    0):        0.              0.             
 surface flow       |    source   (    0):    3.000000e-07
 surface flow       |  res (src)  (    0):   -1.665251e-02        0.              0.              0.              0.      
 surface energy     |  ----------------------------------------------------------------
-surface energy     |  Residual calculation: t0 = 0 t1 = 1 h = 1
+surface energy     |  Residual calculation: t0 = 0 t1 = 3600 h = 3600
 surface energy     |   Debug Cells Information:
 surface energy     |  Cell c(0) centroid = 0.5 0.5
 surface energy     |    neighbor face(0) [dir=1] centroid = 0.5 0
@@ -2928,48 +2502,48 @@ surface energy     |    neighbor face(1) [dir=1] centroid = 1 0.5
 surface energy     |    neighbor face(2) [dir=-1] centroid = 0.5 1
 surface energy     |    neighbor face(3) [dir=-1] centroid = 0 0.5
 surface energy     |  T_old      (    0):      273.650000      273.650000      273.650000      273.650000      273.650000
-surface energy     |  T_new      (    0):      329.592378      329.592378      329.592378      329.592378      329.592378
+surface energy     |  T_new      (    0):      329.995842      329.995842      329.995842      329.995842      329.995842
 surface energy     |     Updating BCs.
 surface energy     |  BCs        (    0):  2(       0.      ) 2(       0.      ) 2(       0.      ) 2(       0.      )
 surface energy     |  In Functional Residual
-surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
-surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
+surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f29e00,node=0x2f2afb0,strong_count=2,weak_count=0}
+surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f29e00,node=0x2f2afb0,strong_count=2,weak_count=0}
 surface energy     |  K          (    0):    1.000000e-21
 surface energy     |  res (diff) (    0):        0.              0.              0.              0.              0.      
 surface energy     |  e_old      (    0):        0.      
 surface energy     |  e_new      (    0):        0.      
 surface energy     |  res (acc)  (    0):        0.      
-surface energy     |  BCs        (    0):  1(   4.289621e-03) 1(   4.289621e-03) 1(   4.289621e-03) 1(   4.289621e-03)
+surface energy     |  BCs        (    0):  1(   4.320284e-03) 1(   4.320284e-03) 1(   4.320284e-03) 1(   4.320284e-03)
 surface energy     |   adv flux  (    0):         0.              0.              0.              0.      
-surface energy     |   enthalpy  (    0):    4.289621e-03    4.289621e-03    4.289621e-03    4.289621e-03    4.289621e-03
+surface energy     |   enthalpy  (    0):    4.320284e-03    4.320284e-03    4.320284e-03    4.320284e-03    4.320284e-03
 surface energy     |  res (adv)  (    0):        0.              0.              0.              0.              0.      
-surface energy     |   In AddSourcessource: 0.141543Adding external source term
-surface energy     |    Q_ext    (    0):         0.141543
-surface energy     |  res (src)  (    0):        -0.141543
+surface energy     |   In AddSourcessource: 0.140648Adding external source term
+surface energy     |    Q_ext    (    0):         0.140648
+surface energy     |  res (src)  (    0):        -0.140648
 surface energy     |   Adding advection to subsurface
-surface energy     |  res (s-s ad(    0):        -0.141471
-surface energy     |  res (src)  (    0):        -0.141471
+surface energy     |  res (s-s ad(    0):        -0.140576
+surface energy     |  res (src)  (    0):        -0.140576
 In Functional Residual
-subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
-subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
+subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f26670,node=0x2f28b00,strong_count=2,weak_count=0}
+subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x2f26670,node=0x2f28b00,strong_count=2,weak_count=0}
 subsurface energy  |   In AddSourcessurface flow       |  ENorm (Infnorm) of: surface-water_content: 
 surface flow       |    ENorm (cell) = 0[-1] (0)
 surface flow       |    ENorm (boundary_face) = 0[-1] (0)
 surface energy     |  ENorm (Infnorm) of: surface-energy: 
 surface energy     |    ENorm (cell) = 0[-1] (0)
 surface energy     |    ENorm (boundary_face) = 0[-1] (0)
-permafrost surface |  8: backtrack 8: error(res) = 0.614959
-permafrost surface |  8: backtrack 8: L2 error(res) = 0.681587
+permafrost surface |  8: backtrack 10: error(res) = 2201.24
+permafrost surface |  8: backtrack 10: L2 error(res) = 0.693584
 permafrost surface |  Updating preconditioner.
-permafrost surface |   Precon update at t = 1
-surface flow       |  Precon update at t = 1
+permafrost surface |   Precon update at t = 3600
+surface flow       |  Precon update at t = 3600
 surface flow       |     Updating permeability?  Updating permeability derivatives? TRUE.
 surface flow       |     Updating BCs.
 surface flow       |      dwc_dp (    0):        5.660279
-surface flow       |      dh_dp  (    0):    1.012379e-04
+surface flow       |      dh_dp  (    0):    1.012020e-04
 surface flow       |    Right scaling TPFA
 surface flow       |      dh_dp  (    0):        0.      
-surface energy     |  Precon update at t = 1
+surface energy     |  Precon update at t = 3600
 surface energy     |     Updating BCs.
 surface energy     |      de_dT  (    0):        0.      
 surface energy     |    dQ_ext/dT(    0):        0.      
@@ -2980,20 +2554,20 @@ surface flow       |    r_ps     (    0):        0.              0.             
 surface flow       |    r_Ts     (    0):        0.              0.              0.              0.              0.      
 permafrost surface |   Residuals (subsurface):
 permafrost surface |   Precon applying coupled subsurface operator.
-inverse::GMRES     |   Converged (relative res), itr=1 ||r||=0.000127537 ||r0||=11659.8
+inverse::GMRES     |   Converged (relative res), itr=5 ||r||=0.00229253 ||r0||=13762.2
 permafrost surface |   PC * residuals (surface):
-surface flow       |    PC * r_ps(    0):       31.105122        0.              0.              0.              0.      
-surface flow       |    PC * r_Ts(    0):   -11659.821813        0.              0.              0.              0.      
+surface flow       |    PC * r_ps(    0):   168943.665937        0.              0.              0.              0.      
+surface flow       |    PC * r_Ts(    0):   -13553.296052        0.              0.              0.              0.      
 permafrost surface |   NKA * PC * residuals (surface):
-surface flow       |    NKA*PC*r_(    0):       31.105122        0.              0.              0.              0.      
-surface flow       |    NKA*PC*r_(    0):   -11659.821813        0.              0.              0.              0.      
+surface flow       |    NKA*PC*r_(    0):   168943.665937        0.              0.              0.              0.      
+surface flow       |    NKA*PC*r_(    0):   -13553.296052        0.              0.              0.              0.      
 permafrost surface |   NKA * PC * residuals (subsurface):
-surface flow       |  Linf, L2 pressure correction (cell) = 31.1051, 31.1051
+surface flow       |  Linf, L2 pressure correction (cell) = 168944, 168944
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
-surface flow       |  Linf, L2 pressure correction (cell) = 31.1051, 31.1051
+surface flow       |  Linf, L2 pressure correction (cell) = 168944, 168944
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
 surface flow       |  p_limit_ = -1
-surface flow       |  Linf, L2 pressure correction (cell) = 31.1051, 31.1051
+surface flow       |  Linf, L2 pressure correction (cell) = 168944, 168944
 surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  Restarting NKA, NKA step does not improve error or resulted in inadmissible solution, on NKA itr = 1
@@ -3002,402 +2576,40 @@ permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-surface energy     |    Checking admissibility...
-surface energy     |      Admissible T? (min/max): 329.77,  329.77
-surface flow       |  ----------------------------------------------------------------
-surface flow       |  Residual calculation: t0 = 0 t1 = 1 h = 1
-surface flow       |   Debug Cells Information:
-surface flow       |  Cell c(0) centroid = 0.5 0.5
-surface flow       |    neighbor face(0) [dir=1] centroid = 0.5 0
-surface flow       |    neighbor face(1) [dir=1] centroid = 1 0.5
-surface flow       |    neighbor face(2) [dir=-1] centroid = 0.5 1
-surface flow       |    neighbor face(3) [dir=-1] centroid = 0 0.5
-surface flow       |  p_old      (    0):    42485.100000    42485.100000    42485.100000    42485.100000    42485.100000
-surface flow       |  p_new      (    0):    42485.351416    42485.100000    42485.100000    42485.100000    42485.100000
-surface flow       |  z          (    0):       10.000000       10.000000       10.000000       10.000000       10.000000
-surface flow       |  h_old      (    0):        0.              0.              0.              0.              0.      
-surface flow       |  h_new      (    0):        0.              0.              0.              0.              0.      
-surface flow       |  h+z        (    0):       10.000000        0.              0.              0.              0.      
-surface flow       |     Updating BCs.
-surface flow       |  BCs        (    0):  2(       0.      ) 2(       0.      ) 2(       0.      ) 2(       0.      )
-surface flow       |     Updating permeability?    Tweaking BCs for the Operator.
-surface flow       |    TRUE.
-surface flow       |       Tweaking BCs for the Operator.
-surface flow       |  uf_frac_old(    0):        1.000000
-surface flow       |  uf_frac_new(    0):        1.000000
-surface flow       |  uw_dir     (    0):         0.              0.              0.              0.      
-surface flow       |  k          (    0):        0.              0.              0.              0.              0.      
-surface flow       |  k_uw       (    0):         0.              0.              0.              0.      
-surface flow       |  q_surf     (    0):         0.              0.              0.              0.      
-surface flow       |  res (diff) (    0):        0.              0.              0.              0.              0.      
-surface flow       |    WC_old   (    0):        0.      
-surface flow       |    WC_new   (    0):        0.      
-surface flow       |  res (acc)  (    0):        0.              0.              0.              0.              0.      
-surface flow       |    source   (    0):    3.000000e-07
-surface flow       |  res (src)  (    0):   -1.665251e-02        0.              0.              0.              0.      
-surface energy     |  ----------------------------------------------------------------
-surface energy     |  Residual calculation: t0 = 0 t1 = 1 h = 1
-surface energy     |   Debug Cells Information:
-surface energy     |  Cell c(0) centroid = 0.5 0.5
-surface energy     |    neighbor face(0) [dir=1] centroid = 0.5 0
-surface energy     |    neighbor face(1) [dir=1] centroid = 1 0.5
-surface energy     |    neighbor face(2) [dir=-1] centroid = 0.5 1
-surface energy     |    neighbor face(3) [dir=-1] centroid = 0 0.5
-surface energy     |  T_old      (    0):      273.650000      273.650000      273.650000      273.650000      273.650000
-surface energy     |  T_new      (    0):      329.770293      329.770293      329.770293      329.770293      329.770293
-surface energy     |     Updating BCs.
-surface energy     |  BCs        (    0):  2(       0.      ) 2(       0.      ) 2(       0.      ) 2(       0.      )
-surface energy     |  In Functional Residual
-surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
-surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
-surface energy     |  K          (    0):    1.000000e-21
-surface energy     |  res (diff) (    0):        0.              0.              0.              0.              0.      
-surface energy     |  e_old      (    0):        0.      
-surface energy     |  e_new      (    0):        0.      
-surface energy     |  res (acc)  (    0):        0.      
-surface energy     |  BCs        (    0):  1(   4.303142e-03) 1(   4.303142e-03) 1(   4.303142e-03) 1(   4.303142e-03)
-surface energy     |   adv flux  (    0):         0.              0.              0.              0.      
-surface energy     |   enthalpy  (    0):    4.303142e-03    4.303142e-03    4.303142e-03    4.303142e-03    4.303142e-03
-surface energy     |  res (adv)  (    0):        0.              0.              0.              0.              0.      
-surface energy     |   In AddSourcessource: 0.141093Adding external source term
-surface energy     |    Q_ext    (    0):         0.141093
-surface energy     |  res (src)  (    0):        -0.141093
-surface energy     |   Adding advection to subsurface
-surface energy     |  res (s-s ad(    0):        -0.141021
-surface energy     |  res (src)  (    0):        -0.141021
-In Functional Residual
-subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
-subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
-subsurface energy  |   In AddSourcessurface flow       |  ENorm (Infnorm) of: surface-water_content: 
-surface flow       |    ENorm (cell) = 0[-1] (0)
-surface flow       |    ENorm (boundary_face) = 0[-1] (0)
-surface energy     |  ENorm (Infnorm) of: surface-energy: 
-surface energy     |    ENorm (cell) = 0[-1] (0)
-surface energy     |    ENorm (boundary_face) = 0[-1] (0)
-permafrost surface |  9: backtrack 8: error(res) = 0.612982
-permafrost surface |  9: backtrack 8: L2 error(res) = 0.687995
-permafrost surface |  Updating preconditioner.
-permafrost surface |   Precon update at t = 1
-surface flow       |  Precon update at t = 1
-surface flow       |     Updating permeability?  Updating permeability derivatives? TRUE.
-surface flow       |     Updating BCs.
-surface flow       |      dwc_dp (    0):        5.660279
-surface flow       |      dh_dp  (    0):    1.012221e-04
-surface flow       |    Right scaling TPFA
-surface flow       |      dh_dp  (    0):        0.      
-surface energy     |  Precon update at t = 1
-surface energy     |     Updating BCs.
-surface energy     |      de_dT  (    0):        0.      
-surface energy     |    dQ_ext/dT(    0):        0.      
-surface flow       |    de_dp    (    0):        0.      
-permafrost surface |   Precon application:
-permafrost surface |   Residuals (surface):
-surface flow       |    r_ps     (    0):        0.              0.              0.              0.              0.      
-surface flow       |    r_Ts     (    0):        0.              0.              0.              0.              0.      
-permafrost surface |   Residuals (subsurface):
-permafrost surface |   Precon applying coupled subsurface operator.
-inverse::GMRES     |   Converged (relative res), itr=1 ||r||=0.000127303 ||r0||=11622.3
-permafrost surface |   PC * residuals (surface):
-surface flow       |    PC * r_ps(    0):       31.890807        0.              0.              0.              0.      
-surface flow       |    PC * r_Ts(    0):   -11622.349684        0.              0.              0.              0.      
-permafrost surface |   NKA * PC * residuals (surface):
-surface flow       |    NKA*PC*r_(    0):       31.890807        0.              0.              0.              0.      
-surface flow       |    NKA*PC*r_(    0):   -11622.349684        0.              0.              0.              0.      
-permafrost surface |   NKA * PC * residuals (subsurface):
-surface flow       |  Linf, L2 pressure correction (cell) = 31.8908, 31.8908
-surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
-surface flow       |  Linf, L2 pressure correction (cell) = 31.8908, 31.8908
-surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
-surface flow       |  p_limit_ = -1
-surface flow       |  Linf, L2 pressure correction (cell) = 31.8908, 31.8908
-surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  Restarting NKA, NKA step does not improve error or resulted in inadmissible solution, on NKA itr = 1
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-surface energy     |    Checking admissibility...
-surface energy     |      Admissible T? (min/max): 329.948,  329.948
-surface flow       |  ----------------------------------------------------------------
-surface flow       |  Residual calculation: t0 = 0 t1 = 1 h = 1
-surface flow       |   Debug Cells Information:
-surface flow       |  Cell c(0) centroid = 0.5 0.5
-surface flow       |    neighbor face(0) [dir=1] centroid = 0.5 0
-surface flow       |    neighbor face(1) [dir=1] centroid = 1 0.5
-surface flow       |    neighbor face(2) [dir=-1] centroid = 0.5 1
-surface flow       |    neighbor face(3) [dir=-1] centroid = 0 0.5
-surface flow       |  p_old      (    0):    42485.100000    42485.100000    42485.100000    42485.100000    42485.100000
-surface flow       |  p_new      (    0):    42485.350930    42485.100000    42485.100000    42485.100000    42485.100000
-surface flow       |  z          (    0):       10.000000       10.000000       10.000000       10.000000       10.000000
-surface flow       |  h_old      (    0):        0.              0.              0.              0.              0.      
-surface flow       |  h_new      (    0):        0.              0.              0.              0.              0.      
-surface flow       |  h+z        (    0):       10.000000        0.              0.              0.              0.      
-surface flow       |     Updating BCs.
-surface flow       |  BCs        (    0):  2(       0.      ) 2(       0.      ) 2(       0.      ) 2(       0.      )
-surface flow       |     Updating permeability?    Tweaking BCs for the Operator.
-surface flow       |    TRUE.
-surface flow       |       Tweaking BCs for the Operator.
-surface flow       |  uf_frac_old(    0):        1.000000
-surface flow       |  uf_frac_new(    0):        1.000000
-surface flow       |  uw_dir     (    0):         0.              0.              0.              0.      
-surface flow       |  k          (    0):        0.              0.              0.              0.              0.      
-surface flow       |  k_uw       (    0):         0.              0.              0.              0.      
-surface flow       |  q_surf     (    0):         0.              0.              0.              0.      
-surface flow       |  res (diff) (    0):        0.              0.              0.              0.              0.      
-surface flow       |    WC_old   (    0):        0.      
-surface flow       |    WC_new   (    0):        0.      
-surface flow       |  res (acc)  (    0):        0.              0.              0.              0.              0.      
-surface flow       |    source   (    0):    3.000000e-07
-surface flow       |  res (src)  (    0):   -1.665251e-02        0.              0.              0.              0.      
-surface energy     |  ----------------------------------------------------------------
-surface energy     |  Residual calculation: t0 = 0 t1 = 1 h = 1
-surface energy     |   Debug Cells Information:
-surface energy     |  Cell c(0) centroid = 0.5 0.5
-surface energy     |    neighbor face(0) [dir=1] centroid = 0.5 0
-surface energy     |    neighbor face(1) [dir=1] centroid = 1 0.5
-surface energy     |    neighbor face(2) [dir=-1] centroid = 0.5 1
-surface energy     |    neighbor face(3) [dir=-1] centroid = 0 0.5
-surface energy     |  T_old      (    0):      273.650000      273.650000      273.650000      273.650000      273.650000
-surface energy     |  T_new      (    0):      329.947636      329.947636      329.947636      329.947636      329.947636
-surface energy     |     Updating BCs.
-surface energy     |  BCs        (    0):  2(       0.      ) 2(       0.      ) 2(       0.      ) 2(       0.      )
-surface energy     |  In Functional Residual
-surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
-surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
-surface energy     |  K          (    0):    1.000000e-21
-surface energy     |  res (diff) (    0):        0.              0.              0.              0.              0.      
-surface energy     |  e_old      (    0):        0.      
-surface energy     |  e_new      (    0):        0.      
-surface energy     |  res (acc)  (    0):        0.      
-surface energy     |  BCs        (    0):  1(   4.316620e-03) 1(   4.316620e-03) 1(   4.316620e-03) 1(   4.316620e-03)
-surface energy     |   adv flux  (    0):         0.              0.              0.              0.      
-surface energy     |   enthalpy  (    0):    4.316620e-03    4.316620e-03    4.316620e-03    4.316620e-03    4.316620e-03
-surface energy     |  res (adv)  (    0):        0.              0.              0.              0.              0.      
-surface energy     |   In AddSourcessource: 0.140641Adding external source term
-surface energy     |    Q_ext    (    0):         0.140641
-surface energy     |  res (src)  (    0):        -0.140641
-surface energy     |   Adding advection to subsurface
-surface energy     |  res (s-s ad(    0):        -0.140569
-surface energy     |  res (src)  (    0):        -0.140569
-In Functional Residual
-subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
-subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
-subsurface energy  |   In AddSourcessurface flow       |  ENorm (Infnorm) of: surface-water_content: 
-surface flow       |    ENorm (cell) = 0[-1] (0)
-surface flow       |    ENorm (boundary_face) = 0[-1] (0)
-surface energy     |  ENorm (Infnorm) of: surface-energy: 
-surface energy     |    ENorm (cell) = 0[-1] (0)
-surface energy     |    ENorm (boundary_face) = 0[-1] (0)
-permafrost surface |  10: backtrack 8: error(res) = 0.611
-permafrost surface |  10: backtrack 8: L2 error(res) = 0.694437
-permafrost surface |  Updating preconditioner.
-permafrost surface |   Precon update at t = 1
-surface flow       |  Precon update at t = 1
-surface flow       |     Updating permeability?  Updating permeability derivatives? TRUE.
-surface flow       |     Updating BCs.
-surface flow       |      dwc_dp (    0):        5.660279
-surface flow       |      dh_dp  (    0):    1.012063e-04
-surface flow       |    Right scaling TPFA
-surface flow       |      dh_dp  (    0):        0.      
-surface energy     |  Precon update at t = 1
-surface energy     |     Updating BCs.
-surface energy     |      de_dT  (    0):        0.      
-surface energy     |    dQ_ext/dT(    0):        0.      
-surface flow       |    de_dp    (    0):        0.      
-permafrost surface |   Precon application:
-permafrost surface |   Residuals (surface):
-surface flow       |    r_ps     (    0):        0.              0.              0.              0.              0.      
-surface flow       |    r_Ts     (    0):        0.              0.              0.              0.              0.      
-permafrost surface |   Residuals (subsurface):
-permafrost surface |   Precon applying coupled subsurface operator.
-inverse::GMRES     |   Converged (relative res), itr=1 ||r||=0.000127069 ||r0||=11584.8
-permafrost surface |   PC * residuals (surface):
-surface flow       |    PC * r_ps(    0):       32.678724        0.              0.              0.              0.      
-surface flow       |    PC * r_Ts(    0):   -11584.757330        0.              0.              0.              0.      
-permafrost surface |   NKA * PC * residuals (surface):
-surface flow       |    NKA*PC*r_(    0):       32.678724        0.              0.              0.              0.      
-surface flow       |    NKA*PC*r_(    0):   -11584.757330        0.              0.              0.              0.      
-permafrost surface |   NKA * PC * residuals (subsurface):
-surface flow       |  Linf, L2 pressure correction (cell) = 32.6787, 32.6787
-surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
-surface flow       |  Linf, L2 pressure correction (cell) = 32.6787, 32.6787
-surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
-surface flow       |  p_limit_ = -1
-surface flow       |  Linf, L2 pressure correction (cell) = 32.6787, 32.6787
-surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  Restarting NKA, NKA step does not improve error or resulted in inadmissible solution, on NKA itr = 1
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-surface energy     |    Checking admissibility...
-surface energy     |      Admissible T? (min/max): 329.992,  329.992
-surface flow       |  ----------------------------------------------------------------
-surface flow       |  Residual calculation: t0 = 0 t1 = 1 h = 1
-surface flow       |   Debug Cells Information:
-surface flow       |  Cell c(0) centroid = 0.5 0.5
-surface flow       |    neighbor face(0) [dir=1] centroid = 0.5 0
-surface flow       |    neighbor face(1) [dir=1] centroid = 1 0.5
-surface flow       |    neighbor face(2) [dir=-1] centroid = 0.5 1
-surface flow       |    neighbor face(3) [dir=-1] centroid = 0 0.5
-surface flow       |  p_old      (    0):    42485.100000    42485.100000    42485.100000    42485.100000    42485.100000
-surface flow       |  p_new      (    0):    42485.350805    42485.100000    42485.100000    42485.100000    42485.100000
-surface flow       |  z          (    0):       10.000000       10.000000       10.000000       10.000000       10.000000
-surface flow       |  h_old      (    0):        0.              0.              0.              0.              0.      
-surface flow       |  h_new      (    0):        0.              0.              0.              0.              0.      
-surface flow       |  h+z        (    0):       10.000000        0.              0.              0.              0.      
-surface flow       |     Updating BCs.
-surface flow       |  BCs        (    0):  2(       0.      ) 2(       0.      ) 2(       0.      ) 2(       0.      )
-surface flow       |     Updating permeability?    Tweaking BCs for the Operator.
-surface flow       |    TRUE.
-surface flow       |       Tweaking BCs for the Operator.
-surface flow       |  uf_frac_old(    0):        1.000000
-surface flow       |  uf_frac_new(    0):        1.000000
-surface flow       |  uw_dir     (    0):         0.              0.              0.              0.      
-surface flow       |  k          (    0):        0.              0.              0.              0.              0.      
-surface flow       |  k_uw       (    0):         0.              0.              0.              0.      
-surface flow       |  q_surf     (    0):         0.              0.              0.              0.      
-surface flow       |  res (diff) (    0):        0.              0.              0.              0.              0.      
-surface flow       |    WC_old   (    0):        0.      
-surface flow       |    WC_new   (    0):        0.      
-surface flow       |  res (acc)  (    0):        0.              0.              0.              0.              0.      
-surface flow       |    source   (    0):    3.000000e-07
-surface flow       |  res (src)  (    0):   -1.665251e-02        0.              0.              0.              0.      
-surface energy     |  ----------------------------------------------------------------
-surface energy     |  Residual calculation: t0 = 0 t1 = 1 h = 1
-surface energy     |   Debug Cells Information:
-surface energy     |  Cell c(0) centroid = 0.5 0.5
-surface energy     |    neighbor face(0) [dir=1] centroid = 0.5 0
-surface energy     |    neighbor face(1) [dir=1] centroid = 1 0.5
-surface energy     |    neighbor face(2) [dir=-1] centroid = 0.5 1
-surface energy     |    neighbor face(3) [dir=-1] centroid = 0 0.5
-surface energy     |  T_old      (    0):      273.650000      273.650000      273.650000      273.650000      273.650000
-surface energy     |  T_new      (    0):      329.991828      329.991828      329.991828      329.991828      329.991828
-surface energy     |     Updating BCs.
-surface energy     |  BCs        (    0):  2(       0.      ) 2(       0.      ) 2(       0.      ) 2(       0.      )
-surface energy     |  In Functional Residual
-surface energy     |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
-surface energy     |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x3862460,node=0x3863610,strong_count=2,weak_count=0}
-surface energy     |  K          (    0):    1.000000e-21
-surface energy     |  res (diff) (    0):        0.              0.              0.              0.              0.      
-surface energy     |  e_old      (    0):        0.      
-surface energy     |  e_new      (    0):        0.      
-surface energy     |  res (acc)  (    0):        0.      
-surface energy     |  BCs        (    0):  1(   4.319979e-03) 1(   4.319979e-03) 1(   4.319979e-03) 1(   4.319979e-03)
-surface energy     |   adv flux  (    0):         0.              0.              0.              0.      
-surface energy     |   enthalpy  (    0):    4.319979e-03    4.319979e-03    4.319979e-03    4.319979e-03    4.319979e-03
-surface energy     |  res (adv)  (    0):        0.              0.              0.              0.              0.      
-surface energy     |   In AddSourcessource: 0.140528Adding external source term
-surface energy     |    Q_ext    (    0):         0.140528
-surface energy     |  res (src)  (    0):        -0.140528
-surface energy     |   Adding advection to subsurface
-surface energy     |  res (s-s ad(    0):        -0.140456
-surface energy     |  res (src)  (    0):        -0.140456
-In Functional Residual
-subsurface energy  |  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
-subsurface energy  |  (should be zero):  g = Teuchos::RCP<Amanzi::TreeVector>{ptr=0x385ecd0,node=0x3861160,strong_count=2,weak_count=0}
-subsurface energy  |   In AddSourcessurface flow       |  ENorm (Infnorm) of: surface-water_content: 
-surface flow       |    ENorm (cell) = 0[-1] (0)
-surface flow       |    ENorm (boundary_face) = 0[-1] (0)
-surface energy     |  ENorm (Infnorm) of: surface-energy: 
-surface energy     |    ENorm (cell) = 0[-1] (0)
-surface energy     |    ENorm (boundary_face) = 0[-1] (0)
-permafrost surface |  11: backtrack 9: error(res) = 0.610504
-permafrost surface |  11: backtrack 9: L2 error(res) = 0.69605
-permafrost surface |  Updating preconditioner.
-permafrost surface |   Precon update at t = 1
-surface flow       |  Precon update at t = 1
-surface flow       |     Updating permeability?  Updating permeability derivatives? TRUE.
-surface flow       |     Updating BCs.
-surface flow       |      dwc_dp (    0):        5.660279
-surface flow       |      dh_dp  (    0):    1.012023e-04
-surface flow       |    Right scaling TPFA
-surface flow       |      dh_dp  (    0):        0.      
-surface energy     |  Precon update at t = 1
-surface energy     |     Updating BCs.
-surface energy     |      de_dT  (    0):        0.      
-surface energy     |    dQ_ext/dT(    0):        0.      
-surface flow       |    de_dp    (    0):        0.      
-permafrost surface |   Precon application:
-permafrost surface |   Residuals (surface):
-surface flow       |    r_ps     (    0):        0.              0.              0.              0.              0.      
-surface flow       |    r_Ts     (    0):        0.              0.              0.              0.              0.      
-permafrost surface |   Residuals (subsurface):
-permafrost surface |   Precon applying coupled subsurface operator.
-inverse::GMRES     |   Converged (relative res), itr=1 ||r||=0.00012701 ||r0||=11575.4
-permafrost surface |   PC * residuals (surface):
-surface flow       |    PC * r_ps(    0):       32.875808        0.              0.              0.              0.      
-surface flow       |    PC * r_Ts(    0):   -11575.352101        0.              0.              0.              0.      
-permafrost surface |   NKA * PC * residuals (surface):
-surface flow       |    NKA*PC*r_(    0):       32.875808        0.              0.              0.              0.      
-surface flow       |    NKA*PC*r_(    0):   -11575.352101        0.              0.              0.              0.      
-permafrost surface |   NKA * PC * residuals (subsurface):
-surface flow       |  Linf, L2 pressure correction (cell) = 32.8758, 32.8758
-surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
-surface flow       |  Linf, L2 pressure correction (cell) = 32.8758, 32.8758
-surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
-surface flow       |  p_limit_ = -1
-surface flow       |  Linf, L2 pressure correction (cell) = 32.8758, 32.8758
-surface flow       |  Linf, L2 pressure correction (boundary_face) = 0, 0
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  Restarting NKA, NKA step does not improve error or resulted in inadmissible solution, on NKA itr = 1
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
-permafrost surface |  PK subsurface energy is not admissible.
+permafrost surface |  PK subsurface energy is not adterminate called after throwing an instance of 'Errors::TimeStepCrash'
+  what():  TimeStepCrash in PK: "permafrost surface and subsurface"
+  at t = 0 with dt = 3600
+  error message: 
+
+Timestep failed: fixed time step size failed.
+
+
+missible.
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  PK subsurface energy is not admissible.
 permafrost surface |  Solution iterate is not admissible, FAIL.
 permafrost surface |  [1;31mstep failed with error code -5[0m
-terminate called after throwing an instance of 'Errors::TimeStepCrash'
-  what():  TimeStepCrash in PK: "permafrost surface and subsurface"
-  at t = 0 with dt = 1
-  error message: 
-
-Timestep failed: fixed time step size failed.
-
-
-[n0036:07717] *** Process received signal ***
-[n0036:07717] Signal: Aborted (6)
-[n0036:07717] Signal code:  (-6)
-[n0036:07717] [ 0] /lib64/libpthread.so.0(+0xf630)[0x2ac20e1cf630]
-[n0036:07717] [ 1] /lib64/libc.so.6(gsignal+0x37)[0x2ac20e412387]
-[n0036:07717] [ 2] /lib64/libc.so.6(abort+0x148)[0x2ac20e413a78]
-[n0036:07717] [ 3] /global/software/sl-7.x86_64/modules/langs/gcc/9.2.0/lib64/libstdc++.so.6(+0x98a43)[0x2ac20dc67a43]
-[n0036:07717] [ 4] /global/software/sl-7.x86_64/modules/langs/gcc/9.2.0/lib64/libstdc++.so.6(+0xa4666)[0x2ac20dc73666]
-[n0036:07717] [ 5] /global/software/sl-7.x86_64/modules/langs/gcc/9.2.0/lib64/libstdc++.so.6(+0xa46b1)[0x2ac20dc736b1]
-[n0036:07717] [ 6] /global/software/sl-7.x86_64/modules/langs/gcc/9.2.0/lib64/libstdc++.so.6(+0xa48e5)[0x2ac20dc738e5]
-[n0036:07717] [ 7] /global/home/users/agraus/code/ats_dev_dir/amanzi-install-master-Debug/lib/libats_mpc.so(_ZN10Exceptions12amanzi_throwIN6Errors13TimeStepCrashEEEvRKT_+0x51)[0x2ac1f3497cd9]
-[n0036:07717] [ 8] /global/home/users/agraus/code/ats_dev_dir/amanzi-install-master-Debug/lib/libats_pks.so(_ZN6Amanzi14PK_BDF_Default11AdvanceStepEddb+0xc7a)[0x2ac1fb59af06]
-[n0036:07717] [ 9] /global/home/users/agraus/code/ats_dev_dir/amanzi-install-master-Debug/lib/libats_mpc.so(_ZN6Amanzi12MPCSubcycled14AdvanceStep_i_Emddb+0xa51)[0x2ac1f33c825b]
-[n0036:07717] [10] /global/home/users/agraus/code/ats_dev_dir/amanzi-install-master-Debug/lib/libats_mpc.so(_ZN6Amanzi12MPCSubcycled11AdvanceStepEddb+0xa6)[0x2ac1f33c83da]
-[n0036:07717] [11] /global/home/users/agraus/code/ats_dev_dir/amanzi-install-master-Debug/lib/libats_mpc.so(_ZN6Amanzi7WeakMPC11AdvanceStepEddb+0xa8)[0x2ac1f33b30fe]
-[n0036:07717] [12] /global/home/users/agraus/code/ats_dev_dir/amanzi-install-master-Debug/lib/libats_executable.so(_ZN3ATS11Coordinator7advanceEv+0x122)[0x2ac1efd05d52]
-[n0036:07717] [13] /global/home/users/agraus/code/ats_dev_dir/amanzi-install-master-Debug/lib/libats_executable.so(_ZN3ATS9ATSDriver12cycle_driverEv+0x90a)[0x2ac1efd27192]
-[n0036:07717] [14] /global/home/users/agraus/code/ats_dev_dir/amanzi-install-master-Debug/lib/libats_executable.so(_ZN3ATS9ATSDriver3runEv+0x275)[0x2ac1efd27941]
-[n0036:07717] [15] ats[0x48594b]
-[n0036:07717] [16] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2ac20e3fe555]
-[n0036:07717] [17] ats[0x484f09]
-[n0036:07717] *** End of error message ***
---------------------------------------------------------------------------
-Primary job  terminated normally, but 1 process returned
-a non-zero exit code. Per user-direction, the job has been aborted.
---------------------------------------------------------------------------
---------------------------------------------------------------------------
-mpirun noticed that process rank 0 with PID 7717 on node n0036.lr5 exited on signal 6 (Aborted).
---------------------------------------------------------------------------
+[n0172:02186] *** Process received signal ***
+[n0172:02186] Signal: Aborted (6)
+[n0172:02186] Signal code:  (-6)
+[n0172:02186] [ 0] /lib64/libpthread.so.0(+0xf630)[0x2ae8ae2a0630]
+[n0172:02186] [ 1] /lib64/libc.so.6(gsignal+0x37)[0x2ae8ae4e3387]
+[n0172:02186] [ 2] /lib64/libc.so.6(abort+0x148)[0x2ae8ae4e4a78]
+[n0172:02186] [ 3] /global/software/sl-7.x86_64/modules/langs/gcc/9.2.0/lib64/libstdc++.so.6(+0x98a43)[0x2ae8add38a43]
+[n0172:02186] [ 4] /global/software/sl-7.x86_64/modules/langs/gcc/9.2.0/lib64/libstdc++.so.6(+0xa4666)[0x2ae8add44666]
+[n0172:02186] [ 5] /global/software/sl-7.x86_64/modules/langs/gcc/9.2.0/lib64/libstdc++.so.6(+0xa46b1)[0x2ae8add446b1]
+[n0172:02186] [ 6] /global/software/sl-7.x86_64/modules/langs/gcc/9.2.0/lib64/libstdc++.so.6(+0xa48e5)[0x2ae8add448e5]
+[n0172:02186] [ 7] /global/home/users/agraus/code/ats_dev_dir/amanzi-install-master-Debug/lib/libats_mpc.so(_ZN10Exceptions12amanzi_throwIN6Errors13TimeStepCrashEEEvRKT_+0x51)[0x2ae89357bcd9]
+[n0172:02186] [ 8] /global/home/users/agraus/code/ats_dev_dir/amanzi-install-master-Debug/lib/libats_pks.so(_ZN6Amanzi14PK_BDF_Default11AdvanceStepEddb+0xc7a)[0x2ae89b66bf06]
+[n0172:02186] [ 9] /global/home/users/agraus/code/ats_dev_dir/amanzi-install-master-Debug/lib/libats_mpc.so(_ZN6Amanzi12MPCSubcycled14AdvanceStep_i_Emddb+0xa51)[0x2ae8934ac25b]
+[n0172:02186] [10] /global/home/users/agraus/code/ats_dev_dir/amanzi-install-master-Debug/lib/libats_mpc.so(_ZN6Amanzi12MPCSubcycled11AdvanceStepEddb+0xa6)[0x2ae8934ac3da]
+[n0172:02186] [11] /global/home/users/agraus/code/ats_dev_dir/amanzi-install-master-Debug/lib/libats_mpc.so(_ZN6Amanzi7WeakMPC11AdvanceStepEddb+0xa8)[0x2ae8934970fe]
+[n0172:02186] [12] /global/home/users/agraus/code/ats_dev_dir/amanzi-install-master-Debug/lib/libats_executable.so(_ZN3ATS11Coordinator7advanceEv+0x122)[0x2ae88fde9d52]
+[n0172:02186] [13] /global/home/users/agraus/code/ats_dev_dir/amanzi-install-master-Debug/lib/libats_executable.so(_ZN3ATS9ATSDriver12cycle_driverEv+0x90a)[0x2ae88fe0b192]
+[n0172:02186] [14] /global/home/users/agraus/code/ats_dev_dir/amanzi-install-master-Debug/lib/libats_executable.so(_ZN3ATS9ATSDriver3runEv+0x275)[0x2ae88fe0b941]
+[n0172:02186] [15] ats[0x48594b]
+[n0172:02186] [16] /lib64/libc.so.6(__libc_start_main+0xf5)[0x2ae8ae4cf555]
+[n0172:02186] [17] ats[0x484f09]
+[n0172:02186] *** End of error message ***

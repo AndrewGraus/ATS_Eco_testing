@@ -93,7 +93,7 @@ to the actual EcoSIM PK
     <Parameter name="start time" type="double" value="0" />
     <Parameter name="start time units" type="string" value="s" />
     <Parameter name="end time" type="double" value="1" />
-    <Parameter name="end time units" type="string" value="s" />
+    <Parameter name="end time units" type="string" value="d" />
     <ParameterList name="PK tree" type="ParameterList">
       <ParameterList name="Top level MPC" type="ParameterList">
         <Parameter name="PK type" type="string" value="weak MPC" />
@@ -219,9 +219,6 @@ to the actual EcoSIM PK
       <Parameter name="PK type" type="string" value="permafrost flow" />
       <Parameter name="primary variable key" type="string" value="pressure" />
       <Parameter name="source term" type="bool" value="true" />
-      <Parameter name="max valid change in saturation in a time step [-]" type="double" value="0.1" />
-      <Parameter name="max valid change in ice saturation in a time step [-]" type="double" value="0.1" />
-      <Parameter name="initial time step" type="double" value="1" />
       <Parameter name="relative permeability method" type="string" value="upwind with Darcy flux" />
       <Parameter name="surface rel perm strategy" type="string" value="clobber" />
       <Parameter name="permeability rescaling" type="double" value="10000000" />
@@ -272,7 +269,6 @@ to the actual EcoSIM PK
       <Parameter name="primary variable key" type="string" value="surface-pressure" />
       <Parameter name="domain name" type="string" value="surface" />
       <Parameter name="source term" type="bool" value="true" />
-      <Parameter name="initial time step" type="double" value="1" />
       <Parameter name="debug cells" type="Array(int)" value="{0}" />
       <ParameterList name="verbose object" type="ParameterList">
         <Parameter name="verbosity level" type="string" value="extreme" />
@@ -299,7 +295,6 @@ to the actual EcoSIM PK
       <Parameter name="PK type" type="string" value="three-phase energy" />
       <Parameter name="primary variable key" type="string" value="temperature" />
       <Parameter name="source term" type="bool" value="false" />
-      <Parameter name="initial time step" type="double" value="1" />
       <Parameter name="supress advective terms in preconditioner" type="bool" value="true" />
       <Parameter name="debug cells" type="Array(int)" value="{3423}" />
       <ParameterList name="verbose object" type="ParameterList">
@@ -351,11 +346,10 @@ to the actual EcoSIM PK
       <Parameter name="primary variable key" type="string" value="surface-temperature" />
       <Parameter name="domain name" type="string" value="surface" />
       <Parameter name="source term" type="bool" value="true" />
-      <Parameter name="source key" type="string" value="surface-energy_source_new" />
+      <Parameter name="source key" type="string" value="surface-energy_source_new" />      
       <Parameter name="flux key" type="string" value="surface-mass_flux" />
       <Parameter name="supress advective terms in preconditioner" type="bool" value="false" />
       <Parameter name="upwind conductivity method" type="string" value="arithmetic mean" />
-      <Parameter name="initial time step" type="double" value="1" />
       <Parameter name="debug cells" type="Array(int)" value="{0}" />
       <ParameterList name="verbose object" type="ParameterList">
         <Parameter name="verbosity level" type="string" value="extreme" />
@@ -382,7 +376,7 @@ to the actual EcoSIM PK
         <Parameter name="include work term" type="bool" value="false" />
       </ParameterList>
 
-    </ParameterList>
+   </ParameterList>
     
     <ParameterList name="surface-subsurface transport coupler">
       <Parameter name="PK type" type="string" value="surface subsurface transport" />
@@ -522,6 +516,7 @@ to the actual EcoSIM PK
       <Parameter name="van Genuchten n [-]" type="double" value="1.58" />
       <Parameter name="van Genuchten m [-]" type="double" value="0.3671" />
       <Parameter name="residual saturation [-]" type="double" value="0.2" />
+      <Parameter name="initial time step" type="double" value="3600" />
       <!--<Parameter name="activity model" type="string" value="unit" />
       <Parameter name="maximum Newton iterations" type="int" value="100" />
       <Parameter name="tolerance" type="double" value="1e-15" />
@@ -595,7 +590,7 @@ to the actual EcoSIM PK
       <ParameterList name="surface-energy_source_new" type="ParameterList">
         <Parameter name="evaluator type" type="string" value="additive evaluator" />
         <Parameter name="dependencies" type="Array(string)" value="{surface-total_energy_source,surface-ecosim_source}" />
-      </ParameterList>      
+      </ParameterList>     
       <ParameterList name="surface-internal_energy_liquid" type="ParameterList">
         <Parameter name="evaluator type" type="string" value="iem" />
         <Parameter name="internal energy key" type="string" value="surface-internal_energy_liquid" />

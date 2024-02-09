@@ -96,35 +96,29 @@ to the actual EcoSIM PK
     <Parameter name="end time units" type="string" value="d" />
     <ParameterList name="PK tree" type="ParameterList">
       <ParameterList name="Top level MPC" type="ParameterList">
-        <Parameter name="PK type" type="string" value="weak MPC" />
-        <ParameterList name="EcoSIM coupler" type="ParameterList">
-          <Parameter name="PK type" type="string" value="EcoSIM for ATS" />
-        </ParameterList>        
-        <ParameterList name="flow transport energy coupler">
-          <Parameter name="PK type" type="string" value="subcycling MPC" />
-          <ParameterList name="permafrost surface and subsurface" type="ParameterList">
-            <Parameter name="PK type" type="string" value="permafrost model" />
-            <ParameterList name="subsurface flow" type="ParameterList">
-              <Parameter name="PK type" type="string" value="permafrost flow" />
-            </ParameterList>
-            <ParameterList name="surface flow" type="ParameterList">
-              <Parameter name="PK type" type="string" value="overland flow with ice" />
-            </ParameterList>
-            <ParameterList name="subsurface energy" type="ParameterList">
-              <Parameter name="PK type" type="string" value="three-phase energy" />
-            </ParameterList>
-            <ParameterList name="surface energy" type="ParameterList">
-              <Parameter name="PK type" type="string" value="surface energy" />
-            </ParameterList>
+        <Parameter name="PK type" type="string" value="subcycling MPC" />
+        <ParameterList name="permafrost surface and subsurface" type="ParameterList">
+          <Parameter name="PK type" type="string" value="permafrost model" />
+          <ParameterList name="subsurface flow" type="ParameterList">
+            <Parameter name="PK type" type="string" value="permafrost flow" />
           </ParameterList>
-          <ParameterList name="surface-subsurface transport coupler" type="ParameterList">
-            <Parameter name="PK type" type="string" value="surface subsurface transport" />
-            <ParameterList name="subsurface transport" type="ParameterList">
-              <Parameter name="PK type" type="string" value="transport ATS" />
-            </ParameterList>
-            <ParameterList name="surface transport" type="ParameterList">
-              <Parameter name="PK type" type="string" value="transport ATS" />
-            </ParameterList>
+          <ParameterList name="surface flow" type="ParameterList">
+            <Parameter name="PK type" type="string" value="overland flow with ice" />
+          </ParameterList>
+          <ParameterList name="subsurface energy" type="ParameterList">
+            <Parameter name="PK type" type="string" value="three-phase energy" />
+          </ParameterList>
+          <ParameterList name="surface energy" type="ParameterList">
+            <Parameter name="PK type" type="string" value="surface energy" />
+          </ParameterList>
+        </ParameterList>
+        <ParameterList name="surface-subsurface transport coupler" type="ParameterList">
+          <Parameter name="PK type" type="string" value="surface subsurface transport" />
+          <ParameterList name="subsurface transport" type="ParameterList">
+            <Parameter name="PK type" type="string" value="transport ATS" />
+          </ParameterList>
+          <ParameterList name="surface transport" type="ParameterList">
+            <Parameter name="PK type" type="string" value="transport ATS" />
           </ParameterList>
         </ParameterList>
       </ParameterList>
@@ -134,11 +128,6 @@ to the actual EcoSIM PK
   <ParameterList name="PKs" type="ParameterList">
 
     <ParameterList name="Top level MPC" type="ParameterList">
-      <Parameter name="PK type" type="string" value="weak MPC" />
-      <Parameter name="PKs order" type="Array(string)" value="{EcoSIM coupler, flow transport energy coupler}" />
-    </ParameterList>
-
-    <ParameterList name="flow transport energy coupler">
       <Parameter name="PK type" type="string" value="subcycling MPC" />
       <Parameter name="PK name" type="string" value="flow transport energy coupler" />
       <Parameter name="PKs order" type="Array(string)" value="{permafrost surface and subsurface, surface-subsurface transport coupler}" />
@@ -160,24 +149,28 @@ to the actual EcoSIM PK
       <ParameterList name="ewc delegate" type="ParameterList">
         <Parameter name="predictor type" type="string" value="smart ewc" />
       </ParameterList>
-      
-      <ParameterList name="verbose object" type="ParameterList">
-        <Parameter name="verbosity level" type="string" value="extreme" />
-      </ParameterList>
 
       <ParameterList name="time integrator" type="ParameterList">
         <Parameter name="extrapolate initial guess" type="bool" value="true" />
         <Parameter name="solver type" type="string" value="nka_bt_ats" />
-        <Parameter name="timestep controller type" type="string" value="fixed" />
+        <Parameter name="timestep controller type" type="string" value="smarter" />
         <ParameterList name="nka_bt_ats parameters" type="ParameterList">
           <Parameter name="backtrack max steps" type="int" value="10" />
           <Parameter name="backtrack factor" type="double" value="0.25" />
           <Parameter name="backtrack tolerance" type="double" value="0.0001" />
           <Parameter name="nonlinear tolerance" type="double" value="1e-09" />
           <Parameter name="diverged tolerance" type="double" value="10000000000" />
-          <Parameter name="limit iterations" type="int" value="25" />
+          <Parameter name="limit iterations" type="int" value="100" />
         </ParameterList>
-        <ParameterList name="timestep controller fixed parameters" type="ParameterList">
+        <ParameterList name="timestep controller smarter parameters" type="ParameterList">
+          <Parameter name="max iterations" type="int" value="18" />
+          <Parameter name="min iterations" type="int" value="10" />
+          <Parameter name="time step reduction factor" type="double" value="0.5" />
+          <Parameter name="time step increase factor" type="double" value="1.5" />
+          <Parameter name="max time step" type="double" value="86400" />
+          <Parameter name="min time step" type="double" value="1e-10" />
+          <Parameter name="growth wait after fail" type="int" value="2" />
+          <Parameter name="count before increasing increase factor" type="int" value="2" />
           <Parameter name="initial time step [s]" type="double" value="3600" />
         </ParameterList>
       </ParameterList>
@@ -205,6 +198,9 @@ to the actual EcoSIM PK
           <Parameter name="maximum number of iteration" type="int" value="10" />
         </ParameterList>
       </ParameterList>
+      <ParameterList name="verbose object" type="ParameterList">
+        <Parameter name="verbosity level" type="string" value="extreme" />
+      </ParameterList>
     </ParameterList>
 
     <ParameterList name="subsurface flow" type="ParameterList">
@@ -213,6 +209,7 @@ to the actual EcoSIM PK
       <Parameter name="source term" type="bool" value="true" />
       <Parameter name="max valid change in saturation in a time step [-]" type="double" value="0.1" />
       <Parameter name="max valid change in ice saturation in a time step [-]" type="double" value="0.1" />
+      <Parameter name="initial time step" type="double" value="1" />
       <Parameter name="relative permeability method" type="string" value="upwind with Darcy flux" />
       <Parameter name="surface rel perm strategy" type="string" value="clobber" />
       <Parameter name="permeability rescaling" type="double" value="10000000" />
@@ -231,7 +228,7 @@ to the actual EcoSIM PK
 
       <ParameterList name="boundary conditions" type="ParameterList">
       </ParameterList>
-      
+
       <ParameterList name="initial condition" type="ParameterList">
         <Parameter name="hydrostatic head [m]" type="double" value="-6" />
         <Parameter name="hydrostatic water density [kg m^-3]" type="double" value="1000" />
@@ -263,6 +260,7 @@ to the actual EcoSIM PK
       <Parameter name="primary variable key" type="string" value="surface-pressure" />
       <Parameter name="domain name" type="string" value="surface" />
       <Parameter name="source term" type="bool" value="true" />
+      <Parameter name="initial time step" type="double" value="3600" />
       <Parameter name="debug cells" type="Array(int)" value="{0}" />
       <ParameterList name="verbose object" type="ParameterList">
         <Parameter name="verbosity level" type="string" value="extreme" />
@@ -289,6 +287,7 @@ to the actual EcoSIM PK
       <Parameter name="PK type" type="string" value="three-phase energy" />
       <Parameter name="primary variable key" type="string" value="temperature" />
       <Parameter name="source term" type="bool" value="false" />
+      <Parameter name="initial time step" type="double" value="3600" />
       <Parameter name="supress advective terms in preconditioner" type="bool" value="true" />
       <Parameter name="debug cells" type="Array(int)" value="{3423}" />
       <ParameterList name="verbose object" type="ParameterList">
@@ -340,10 +339,11 @@ to the actual EcoSIM PK
       <Parameter name="primary variable key" type="string" value="surface-temperature" />
       <Parameter name="domain name" type="string" value="surface" />
       <Parameter name="source term" type="bool" value="true" />
-      <Parameter name="source key" type="string" value="surface-energy_source_new" />      
+      <Parameter name="source key" type="string" value="surface-energy_source_new" />
       <Parameter name="flux key" type="string" value="surface-mass_flux" />
       <Parameter name="supress advective terms in preconditioner" type="bool" value="false" />
       <Parameter name="upwind conductivity method" type="string" value="arithmetic mean" />
+      <Parameter name="initial time step" type="double" value="3600" />
       <Parameter name="debug cells" type="Array(int)" value="{0}" />
       <ParameterList name="verbose object" type="ParameterList">
         <Parameter name="verbosity level" type="string" value="extreme" />
@@ -370,8 +370,8 @@ to the actual EcoSIM PK
         <Parameter name="include work term" type="bool" value="false" />
       </ParameterList>
 
-   </ParameterList>
-    
+    </ParameterList>
+
     <ParameterList name="surface-subsurface transport coupler">
       <Parameter name="PK type" type="string" value="surface subsurface transport" />
       <Parameter name="PK name" type="string" value="surface subsurface transport" />
@@ -492,43 +492,6 @@ to the actual EcoSIM PK
       </ParameterList>
     </ParameterList>
 
-    <ParameterList name="EcoSIM coupler" type="ParameterList">
-      <Parameter name="PK type" type="string" value="EcoSIM for ATS" />
-      <Parameter name="engine" type="string" value="EcoSIM" />
-      <Parameter name="engine input file" type="string" value="Null" />
-      <Parameter name="heat capacity [J mol^-1 K^-1]" type="double" value="37.7841" />
-      <Parameter name="atmospheric N2" type="double" value="0.1"/>
-      <Parameter name="atmospheric O2" type="double" value="0.2"/>
-      <Parameter name="atmospheric CO2" type="double" value="0.3"/>
-      <Parameter name="atmospheric CH4" type="double" value="0.4"/>
-      <Parameter name="atmospheric N2O" type="double" value="0.5"/>
-      <Parameter name="atmospheric H2" type="double" value="0.01"/>
-      <Parameter name="atmospheric NH3" type="double" value="0.001"/>
-      <Parameter name="Field Capacity [Mpa]" type="double" value="0.001"/>
-      <Parameter name="Wilting Point [Mpa]" type="double" value="0.001"/>
-      <Parameter name="van Genuchten alpha [Pa^-1]" type="double" value="2e-05" />
-      <Parameter name="van Genuchten n [-]" type="double" value="1.58" />
-      <Parameter name="van Genuchten m [-]" type="double" value="0.3671" />
-      <Parameter name="residual saturation [-]" type="double" value="0.2" />
-      <Parameter name="initial time step" type="double" value="3600" />
-      <!--<Parameter name="activity model" type="string" value="unit" />
-      <Parameter name="maximum Newton iterations" type="int" value="100" />
-      <Parameter name="tolerance" type="double" value="1e-15" />
-      <Parameter name="max time step (s)" type="double" value="220000.0" />
-      <Parameter name="min time step (s)" type="double" value="10000000000.0" />
-      <Parameter name="initial time step (s)" type="double" value="220000.0" />
-      <Parameter name="time step cut threshold" type="int" value="5" />
-      <Parameter name="time step cut factor" type="double" value="2.0" />
-      <Parameter name="time step increase threshold" type="int" value="4" />
-      <Parameter name="time step increase factor" type="double" value="1.2" />
-      <Parameter name="time step control method" type="string" value="fixed" />
-      <Parameter name="initial conditions time" type="double" value="0.0" />
-      <Parameter name="number of component concentrations" type="int" value="16" />
-      -->
-      <ParameterList name="verbose object" type="ParameterList">
-        <Parameter name="verbosity level" type="string" value="low" />
-      </ParameterList>
-    </ParameterList>
   </ParameterList>
 
   <ParameterList name="state" type="ParameterList">
@@ -536,6 +499,9 @@ to the actual EcoSIM PK
       <ParameterList name="water_content" type="ParameterList">
         <Parameter name="evaluator type" type="string" value="liquid+ice water content" />
       </ParameterList>
+      <!--<ParameterList name="suction_head" type="ParameterList">
+        <Parameter name="evaluator type" type="string" value="WRM suction head" />
+      </ParameterList>-->
       <ParameterList name="surface-water_content" type="ParameterList">
         <Parameter name="evaluator type" type="string" value="overland pressure water content" />
       </ParameterList>
@@ -584,7 +550,7 @@ to the actual EcoSIM PK
       <ParameterList name="surface-energy_source_new" type="ParameterList">
         <Parameter name="evaluator type" type="string" value="additive evaluator" />
         <Parameter name="dependencies" type="Array(string)" value="{surface-total_energy_source,surface-ecosim_source}" />
-      </ParameterList>     
+      </ParameterList>
       <ParameterList name="surface-internal_energy_liquid" type="ParameterList">
         <Parameter name="evaluator type" type="string" value="iem" />
         <Parameter name="internal energy key" type="string" value="surface-internal_energy_liquid" />
@@ -628,14 +594,12 @@ to the actual EcoSIM PK
         <Parameter name="evaluator type" type="string" value="additive evaluator" />
         <Parameter name="evaluator dependencies" type="Array(string)" value="{transpiration}" />
         <Parameter name="transpiration coefficient" type="double" value="-1.0" />
-      </ParameterList>      
+      </ParameterList>
+      <ParameterList name="rooting_depth_fraction" type="ParameterList">
+        <Parameter name="evaluator type" type="string" value="rooting depth fraction" />
+      </ParameterList>
       <ParameterList name="plant_wilting_factor" type="ParameterList">
         <Parameter name="evaluator type" type="string" value="plant wilting factor" />
-        <ParameterList name="plant_wilting_factor parameters" type="ParameterList">
-          <ParameterList name="surface" type="ParameterList">
-            <Parameter name="region" type="string" value="surface domain" />
-          </ParameterList>
-        </ParameterList>
       </ParameterList>
       <ParameterList name="surface-potential_evapotranspiration" type="ParameterList">
         <Parameter name="evaluator type" type="string" value="multiplicative evaluator" />
@@ -645,7 +609,7 @@ to the actual EcoSIM PK
         <Parameter name="constant in time" type="bool" value="true" />
         <Parameter name="evaluator type" type="string" value="depth" />
       </ParameterList>
-     <!--<ParameterList name="surface-water_source" type="ParameterList">
+      <!--<ParameterList name="surface-water_source" type="ParameterList">
         <Parameter name="evaluator type" type="string" value="independent variable" />
         <ParameterList name="function" type="ParameterList">
           <ParameterList name="domain rain" type="ParameterList">
@@ -831,9 +795,6 @@ to the actual EcoSIM PK
       </ParameterList>
       <ParameterList name="surface-area_fractions" type="ParameterList">
         <Parameter name="evaluator type" type="string" value="area fractions, two components" />
-      </ParameterList>
-      <ParameterList name="matric_pressure" type="ParameterList">
-        <Parameter name="evaluator type" type="string" value="matric pressure" />
       </ParameterList>
       <ParameterList name="capillary_pressure_gas_liq" type="ParameterList">
         <Parameter name="evaluator type" type="string" value="capillary pressure, atmospheric gas over liquid" />
@@ -1046,7 +1007,7 @@ to the actual EcoSIM PK
           <Parameter name="dessicated zone thickness [m]" type="double" value="0.1" />
           <Parameter name="roughness length of bare ground [m]" type="double" value="0.04" />
           <Parameter name="roughness length of snow [m]" type="double" value="0.004" />
-          <Parameter name="snow transition depth [m]" type="double" value="0.02" />          
+          <Parameter name="snow transition depth [m]" type="double" value="0.02" />
           <Parameter name="water transition depth [m]" type="double" value="0.02" />
           <Parameter name="albedo of ground surface [-]" type="double" value="0.135" />
           <Parameter name="albedo of bare ground [-]" type="double" value="0.135" />
@@ -1064,5 +1025,77 @@ to the actual EcoSIM PK
         </ParameterList>
       </ParameterList>
     </ParameterList>
+  </ParameterList>
+  <ParameterList name="observations" type="ParameterList">
+    <!--<ParameterList name="surface energy flux" type="ParameterList">
+      <Parameter name="variable" type="string" value="surface-total_energy_source" />
+      <Parameter name="region" type="string" value="surface domain" />
+      <Parameter name="functional" type="string" value="extensive integral" />
+      <Parameter name="delimiter" type="string" value=" " />
+      <Parameter name="location name" type="string" value="face" />
+      <Parameter name="write interval" type="int" value="1" />
+      <Parameter name="observation output filename" type="string" value="surface_energy_flux.dat" />
+      <Parameter name="times start period stop" type="Array(double)" value="{ 0,100,-1}" />
+    </ParameterList>
+    <ParameterList name="surface-water_flux" type="ParameterList">
+      <Parameter name="variable" type="string" value="surface-water_flux" />
+      <Parameter name="region" type="string" value="surface domain" />
+      <Parameter name="functional" type="string" value="extensive integral" />
+      <Parameter name="delimiter" type="string" value=" " />
+      <Parameter name="location name" type="string" value="face" />
+      <Parameter name="write interval" type="int" value="1" />
+      <Parameter name="observation output filename" type="string" value="surface-water_flux.dat" />
+      <Parameter name="times start period stop" type="Array(double)" value="{ 0,100,-1}" />
+    </ParameterList>
+    <ParameterList name="surface-energy" type="ParameterList">
+      <Parameter name="variable" type="string" value="surface-energy" />
+      <Parameter name="region" type="string" value="surface domain" />
+      <Parameter name="functional" type="string" value="extensive integral" />
+      <Parameter name="delimiter" type="string" value=" " />
+      <Parameter name="location name" type="string" value="cell" />
+      <Parameter name="write interval" type="int" value="1" />
+      <Parameter name="observation output filename" type="string" value="surface-energy.dat" />
+      <Parameter name="times start period stop" type="Array(double)" value="{ 0,100,-1}" />
+    </ParameterList>
+    <ParameterList name="surface-water_content" type="ParameterList">
+      <Parameter name="variable" type="string" value="surface-water_content" />
+      <Parameter name="region" type="string" value="surface domain" />
+      <Parameter name="functional" type="string" value="extensive integral" />
+      <Parameter name="delimiter" type="string" value=" " />
+      <Parameter name="location name" type="string" value="cell" />
+      <Parameter name="write interval" type="int" value="1" />
+      <Parameter name="observation output filename" type="string" value="surface-water_content.dat" />
+      <Parameter name="times start period stop" type="Array(double)" value="{ 0,100,-1}" />
+    </ParameterList>-->
+    <ParameterList name="water_content" type="ParameterList">
+      <Parameter name="variable" type="string" value="water_content" />
+      <Parameter name="region" type="string" value="subsurface domain" />
+      <Parameter name="functional" type="string" value="extensive integral" />
+      <Parameter name="delimiter" type="string" value=" " />
+      <Parameter name="location name" type="string" value="cell" />
+      <Parameter name="write interval" type="int" value="1" />
+      <Parameter name="observation output filename" type="string" value="water_content.dat" />
+      <Parameter name="times start period stop" type="Array(double)" value="{ 0,100,-1}" />
+    </ParameterList>
+    <ParameterList name="energy" type="ParameterList">
+      <Parameter name="variable" type="string" value="energy" />
+      <Parameter name="region" type="string" value="subsurface domain" />
+      <Parameter name="functional" type="string" value="extensive integral" />
+      <Parameter name="delimiter" type="string" value=" " />
+      <Parameter name="location name" type="string" value="cell" />
+      <Parameter name="write interval" type="int" value="1" />
+      <Parameter name="observation output filename" type="string" value="energy.dat" />
+      <Parameter name="times start period stop" type="Array(double)" value="{ 0,100,-1}" />
+    </ParameterList>
+    <!--<ParameterList name="surf-subsurf" type="ParameterList">
+      <Parameter name="variable" type="string" value="surface_subsurface_flux" />
+      <Parameter name="region" type="string" value="subsurface domain" />
+      <Parameter name="functional" type="string" value="extensive integral" />
+      <Parameter name="delimiter" type="string" value=" " />
+      <Parameter name="location name" type="string" value="cell" />
+      <Parameter name="write interval" type="int" value="1" />
+      <Parameter name="observation output filename" type="string" value="suf-subsurf_flux.dat" />
+      <Parameter name="times start period stop" type="Array(double)" value="{ 0,100,-1}" />
+    </ParameterList>-->
   </ParameterList>
 </ParameterList>

@@ -21,9 +21,9 @@ to the actual EcoSIM PK
       <Parameter name="mesh type" type="string" value="generate mesh" />
       <Parameter name="build columns from set" type="string" value="surface" />
       <ParameterList name="generate mesh parameters" type="ParameterList">
-        <Parameter name="number of cells" type="Array(int)" value="{1,1,100}" />
+        <Parameter name="number of cells" type="Array(int)" value="{5,5,100}" />
         <Parameter name="domain low coordinate" type="Array(double)" value="{ 0, 0, 0}" />
-        <Parameter name="domain high coordinate" type="Array(double)" value="{ 1, 1,10}" />
+        <Parameter name="domain high coordinate" type="Array(double)" value="{ 5, 5,10}" />
       </ParameterList>
     </ParameterList>
     <ParameterList name="snow" type="ParameterList">
@@ -38,7 +38,7 @@ to the actual EcoSIM PK
     <ParameterList name="subsurface domain" type="ParameterList">
       <ParameterList name="region: box" type="ParameterList">
         <Parameter name="low coordinate" type="Array(double)" value="{ 0, 0, 0}" />
-        <Parameter name="high coordinate" type="Array(double)" value="{ 1, 1,10}" />
+        <Parameter name="high coordinate" type="Array(double)" value="{ 5, 5,10}" />
       </ParameterList>
     </ParameterList>
     <ParameterList name="surface domain" type="ParameterList">
@@ -133,7 +133,7 @@ to the actual EcoSIM PK
 
   <ParameterList name="visualization">
     <ParameterList name="domain" type="ParameterList">
-      <Parameter name="times start period stop" type="Array(double)" value="{ 0,100,-1}" />
+      <Parameter name="times start period stop" type="Array(double)" value="{ 0,3600,-1}" />
     </ParameterList>
   </ParameterList>
 
@@ -275,6 +275,7 @@ to the actual EcoSIM PK
       <Parameter name="primary variable key" type="string" value="surface-pressure" />
       <Parameter name="domain name" type="string" value="surface" />
       <Parameter name="source term" type="bool" value="true" />
+      <Parameter name="source key" type="string" value="surface-water_source_new" />
       <Parameter name="debug cells" type="Array(int)" value="{0}" />
       <ParameterList name="verbose object" type="ParameterList">
         <Parameter name="verbosity level" type="string" value="extreme" />
@@ -596,7 +597,15 @@ to the actual EcoSIM PK
       <ParameterList name="surface-energy_source_new" type="ParameterList">
         <Parameter name="evaluator type" type="string" value="additive evaluator" />
         <Parameter name="dependencies" type="Array(string)" value="{surface-total_energy_source,surface-ecosim_source}" />
-      </ParameterList>     
+      </ParameterList>
+      <ParameterList name="surface-ecosim_water_source" type="ParameterList">
+        <Parameter name="evaluator type" type="string" value="independent variable constant" />
+        <Parameter name="value" type="double" value="0.00" />
+      </ParameterList>
+      <ParameterList name="surface-water_source_new" type="ParameterList">
+        <Parameter name="evaluator type" type="string" value="additive evaluator" />
+        <Parameter name="dependencies" type="Array(string)" value="{surface-water_source,surface-ecosim_water_source}" />
+      </ParameterList>
       <ParameterList name="surface-internal_energy_liquid" type="ParameterList">
         <Parameter name="evaluator type" type="string" value="iem" />
         <Parameter name="internal energy key" type="string" value="surface-internal_energy_liquid" />

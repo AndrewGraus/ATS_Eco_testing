@@ -760,8 +760,11 @@ to the actual EcoSIM PK
             <Parameter name="region" type="string" value="surface domain" />
             <Parameter name="component" type="string" value="cell" />
             <ParameterList name="function" type="ParameterList">
-              <ParameterList name="function-constant" type="ParameterList">
-                <Parameter name="value" type="double" value="265.0" />
+              <ParameterList name="function-tabular" type="ParameterList">
+                <Parameter name="x values" type="Array(double)" value="{0.0, 172800.0}"/>
+                <Parameter name="x coordinate" type="string" value="t"/>
+                <Parameter name="y values" type="Array(double)" value="{265.0, 278.0}"/>
+                <Parameter name="forms" type="Array(string)" value="{constant, constant}"/>
               </ParameterList>
             </ParameterList>
           </ParameterList>
@@ -803,9 +806,10 @@ to the actual EcoSIM PK
             <Parameter name="component" type="string" value="cell" />
             <ParameterList name="function" type="ParameterList">
               <ParameterList name="function-tabular" type="ParameterList">
-                <Parameter name="x values" type="Array(double)" value="{ 0,86400,777600,864000,1296000,1382400}" />
-                <Parameter name="y values" type="Array(double)" value="{3e-07, 0,3e-07, 0,3e-07, 0}" />
-                <Parameter name="forms" type="Array(string)" value="{constant, constant, constant, constant, constant}" />
+                <Parameter name="x values" type="Array(double)" value="{ 0.0,172800.0}" />
+                <Parameter name="x coordinate" type="string" value="t"/>
+                <Parameter name="y values" type="Array(double)" value="{3e-07, 0}" />
+                <Parameter name="forms" type="Array(string)" value="{constant, constant}" />
               </ParameterList>
             </ParameterList>
           </ParameterList>

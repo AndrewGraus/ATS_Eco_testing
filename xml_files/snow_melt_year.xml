@@ -44,7 +44,7 @@ to the actual EcoSIM PK
     <ParameterList name="surface domain" type="ParameterList">
       <ParameterList name="region: all" type="ParameterList">
       </ParameterList>
-    </ParameterList>
+    </ParameterList>    
     <ParameterList name="east face" type="ParameterList">
       <ParameterList name="region: plane" type="ParameterList">
         <Parameter name="point" type="Array(double)" value="{ 1, 1, 0}" />
@@ -87,12 +87,18 @@ to the actual EcoSIM PK
         <Parameter name="high coordinate" type="Array(double)" value="{ 1, 0,6.1}" />
       </ParameterList>
     </ParameterList>
+    <ParameterList name="surf_obs" type="ParameterList">
+      <ParameterList name="region: box" type="ParameterList">
+        <Parameter name="low coordinate" type="Array(double)" value="{ 0, 0}" />
+        <Parameter name="high coordinate" type="Array(double)" value="{ 1, 1}" />
+      </ParameterList>
+    </ParameterList>
   </ParameterList>
 
   <ParameterList name="cycle driver" type="ParameterList">
     <Parameter name="start time" type="double" value="0" />
     <Parameter name="start time units" type="string" value="s" />
-    <Parameter name="end time" type="double" value="10" />
+    <Parameter name="end time" type="double" value="365" />
     <Parameter name="end time units" type="string" value="d" />
     <ParameterList name="PK tree" type="ParameterList">
       <ParameterList name="Top level MPC" type="ParameterList">
@@ -318,7 +324,7 @@ to the actual EcoSIM PK
             <Parameter name="regions" type="Array(string)" value="{bottom face}" />
             <ParameterList name="boundary temperature" type="ParameterList">
               <ParameterList name="function-constant" type="ParameterList">
-                <Parameter name="value" type="double" value="264.15" />
+                <Parameter name="value" type="double" value="273.0" />
               </ParameterList>
             </ParameterList>
           </ParameterList>
@@ -326,7 +332,7 @@ to the actual EcoSIM PK
       </ParameterList>
 
       <ParameterList name="initial condition" type="ParameterList">
-        <Parameter name="constant" type="double" value="273.65" />
+        <Parameter name="constant" type="double" value="273.0" />
       </ParameterList>
 
       <ParameterList name="thermal conductivity evaluator" type="ParameterList">
@@ -1054,4 +1060,50 @@ to the actual EcoSIM PK
       </ParameterList>
     </ParameterList>
   </ParameterList>
+
+  <ParameterList name="observations" type="ParameterList">
+    <ParameterList name="Qs" type="ParameterList">
+      <Parameter name="observation output filename" type="string" value="Q.dat" />
+      <Parameter name="times start period stop" type="Array(double)" value="{ 0,86400,-1}" />
+      <ParameterList name="observed quantities" type="ParameterList">
+        <ParameterList name="Q_w" type="ParameterList">
+          <Parameter name="variable" type="string" value="surface-water_source_new" />
+          <Parameter name="region" type="string" value="surf_obs" />
+          <Parameter name="functional" type="string" value="integral" />
+          <Parameter name="location name" type="string" value="cell" />
+        </ParameterList>
+        <ParameterList name="Q_e" type="ParameterList">
+          <Parameter name="variable" type="string" value="surface-energy_source_new" />
+          <Parameter name="region" type="string" value="surf_obs" />
+          <Parameter name="functional" type="string" value="integral" />
+          <Parameter name="location name" type="string" value="cell" />
+        </ParameterList>
+        <ParameterList name="Q_e_ecosim" type="ParameterList">
+          <Parameter name="variable" type="string" value="surface-ecosim_source" />
+          <Parameter name="region" type="string" value="surf_obs" />
+          <Parameter name="functional" type="string" value="integral" />
+          <Parameter name="location name" type="string" value="cell" />
+        </ParameterList>
+	<ParameterList name="Q_w_ecosim" type="ParameterList">
+          <Parameter name="variable" type="string" value="surface-ecosim_water_source" />
+          <Parameter name="region" type="string" value="surf_obs" />
+          <Parameter name="functional" type="string" value="integral" />
+          <Parameter name="location name" type="string" value="cell" />
+        </ParameterList>
+        <ParameterList name="Q_e_ats" type="ParameterList">
+          <Parameter name="variable" type="string" value="surface-total_energy_source" />
+          <Parameter name="region" type="string" value="surf_obs" />
+          <Parameter name="functional" type="string" value="integral" />
+          <Parameter name="location name" type="string" value="cell" />
+        </ParameterList>
+        <ParameterList name="Q_w_ats" type="ParameterList">
+          <Parameter name="variable" type="string" value="surface-water_source" />
+          <Parameter name="region" type="string" value="surf_obs" />
+          <Parameter name="functional" type="string" value="integral" />
+          <Parameter name="location name" type="string" value="cell" />
+        </ParameterList>
+      </ParameterList>
+    </ParameterList>
+  </ParameterList>
+
 </ParameterList>

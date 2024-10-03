@@ -87,6 +87,12 @@ to the actual EcoSIM PK
         <Parameter name="high coordinate" type="Array(double)" value="{ 1, 0,6.1}" />
       </ParameterList>
     </ParameterList>
+    <ParameterList name="surf_obs" type="ParameterList">
+      <ParameterList name="region: box" type="ParameterList">
+        <Parameter name="low coordinate" type="Array(double)" value="{ 0, 0}" />
+        <Parameter name="high coordinate" type="Array(double)" value="{ 1, 1}" />
+      </ParameterList>
+    </ParameterList>
   </ParameterList>
 
   <ParameterList name="cycle driver" type="ParameterList">
@@ -220,7 +226,9 @@ to the actual EcoSIM PK
         </ParameterList>
       </ParameterList>
     </ParameterList>
-
+    
+    <!--Old parameters-->
+    <!--
     <ParameterList name="subsurface flow" type="ParameterList">
       <Parameter name="PK type" type="string" value="permafrost flow" />
       <Parameter name="primary variable key" type="string" value="pressure" />
@@ -267,7 +275,55 @@ to the actual EcoSIM PK
           <Parameter name="minimum dsi_dpressure magnitude" type="double" value="1e-12" />
         </ParameterList>
       </ParameterList>
+    </ParameterList>
+    -->
 
+    <ParameterList name="subsurface flow" type="ParameterList">
+      <Parameter name="PK type" type="string" value="permafrost flow" />
+      <Parameter name="primary variable key" type="string" value="pressure" />
+      <Parameter name="source term" type="bool" value="true" />
+      <Parameter name="relative permeability method" type="string" value="upwind with Darcy flux" />
+      <Parameter name="surface rel perm strategy" type="string" value="clobber" />
+      <Parameter name="permeability rescaling" type="double" value="100000000" />
+      <Parameter name="debug cells" type="Array(int)" value="{3423}" />
+      <ParameterList name="verbose object" type="ParameterList">
+        <Parameter name="verbosity level" type="string" value="low" />
+      </ParameterList>
+
+      <ParameterList name="diffusion" type="ParameterList">
+        <Parameter name="discretization primary" type="string" value="mfd: two-point flux approximation" />
+      </ParameterList>
+
+      <ParameterList name="diffusion preconditioner" type="ParameterList">
+        <Parameter name="Newton correction" type="string" value="approximate Jacobian" />
+      </ParameterList>
+
+      <ParameterList name="boundary conditions" type="ParameterList">
+      </ParameterList>
+
+      <ParameterList name="initial condition" type="ParameterList">
+        <Parameter name="hydrostatic head [m]" type="double" value="-6" />
+        <Parameter name="hydrostatic water density [kg m^-3]" type="double" value="1000" />
+      </ParameterList>
+
+      <ParameterList name="water retention evaluator" type="ParameterList">
+        <Parameter name="minimum rel perm cutoff" type="double" value=" 0" />
+        <Parameter name="use surface rel perm" type="bool" value="true" />
+        <ParameterList name="WRM parameters" type="ParameterList">
+          <ParameterList name="subsurface domain" type="ParameterList">
+            <Parameter name="region" type="string" value="subsurface domain" />
+            <Parameter name="WRM Type" type="string" value="van Genuchten" />
+            <Parameter name="van Genuchten alpha [Pa^-1]" type="double" value="5e-05" />
+            <Parameter name="van Genuchten n [-]" type="double" value="2.0" />
+            <Parameter name="residual saturation [-]" type="double" value="0.2" />
+            <Parameter name="smoothing interval width [saturation]" type="double" value="0.05" />
+          </ParameterList>
+        </ParameterList>
+        <ParameterList name="permafrost model parameters" type="ParameterList">
+          <Parameter name="permafrost WRM type" type="string" value="permafrost model" />
+          <Parameter name="minimum dsi_dpressure magnitude" type="double" value="1e-12" />
+        </ParameterList>
+      </ParameterList>
     </ParameterList>
 
     <ParameterList name="surface flow" type="ParameterList">
@@ -318,7 +374,7 @@ to the actual EcoSIM PK
             <Parameter name="regions" type="Array(string)" value="{bottom face}" />
             <ParameterList name="boundary temperature" type="ParameterList">
               <ParameterList name="function-constant" type="ParameterList">
-                <Parameter name="value" type="double" value="264.15" />
+                <Parameter name="value" type="double" value="265.0" />
               </ParameterList>
             </ParameterList>
           </ParameterList>
@@ -326,8 +382,24 @@ to the actual EcoSIM PK
       </ParameterList>
 
       <ParameterList name="initial condition" type="ParameterList">
-        <Parameter name="constant" type="double" value="273.65" />
+        <Parameter name="constant" type="double" value="265.0" />
       </ParameterList>
+
+      <!--DEFAULT PARAMS-->
+      <!--
+      <ParameterList name="thermal conductivity evaluator" type="ParameterList">
+        <ParameterList name="thermal conductivity parameters" type="ParameterList">
+          <ParameterList name="subsurface" type="ParameterList">
+            <Parameter name="region" type="string" value="subsurface domain" />
+            <Parameter name="thermal conductivity type" type="string" value="three-phase wet/dry" />
+            <Parameter name="thermal conductivity, saturated (unfrozen) [W m^-1 K^-1]" type="double" value="0.67" />
+            <Parameter name="thermal conductivity, dry [W m^-1 K^-1]" type="double" value="0.07" />
+            <Parameter name="unsaturated alpha frozen [-]" type="double" value=" 1" />
+            <Parameter name="unsaturated alpha unfrozen [-]" type="double" value="0.5" />
+          </ParameterList>
+        </ParameterList>
+      </ParameterList>
+      -->
 
       <ParameterList name="thermal conductivity evaluator" type="ParameterList">
         <ParameterList name="thermal conductivity parameters" type="ParameterList">
@@ -763,7 +835,7 @@ to the actual EcoSIM PK
               <ParameterList name="function-tabular" type="ParameterList">
                 <Parameter name="x values" type="Array(double)" value="{0.0, 172800.0}"/>
                 <Parameter name="x coordinate" type="string" value="t"/>
-                <Parameter name="y values" type="Array(double)" value="{265.0, 278.0}"/>
+                <Parameter name="y values" type="Array(double)" value="{265.0, 300.0}"/>
                 <Parameter name="forms" type="Array(string)" value="{constant}"/>
               </ParameterList>
             </ParameterList>
@@ -1053,5 +1125,50 @@ to the actual EcoSIM PK
         </ParameterList>
       </ParameterList>
     </ParameterList>
+  </ParameterList>
+
+  <ParameterList name="observations" type="ParameterList">
+    <ParameterList name="Qs" type="ParameterList">
+      <Parameter name="observation output filename" type="string" value="Q.dat" />
+      <Parameter name="times start period stop" type="Array(double)" value="{ 0,3600,-1}" />
+      <ParameterList name="observed quantities" type="ParameterList">
+        <ParameterList name="Q_e" type="ParameterList">
+          <Parameter name="variable" type="string" value="surface-energy_source_new" />
+          <Parameter name="region" type="string" value="surf_obs" />
+          <Parameter name="functional" type="string" value="integral" />
+          <Parameter name="location name" type="string" value="cell" />
+        </ParameterList>
+        <ParameterList name="Q_w" type="ParameterList">
+          <Parameter name="variable" type="string" value="surface-water_source_new" />
+          <Parameter name="region" type="string" value="surf_obs" />
+          <Parameter name="functional" type="string" value="integral" />
+          <Parameter name="location name" type="string" value="cell" />
+        </ParameterList>
+        <ParameterList name="Q_e_ecosim" type="ParameterList">
+          <Parameter name="variable" type="string" value="surface-ecosim_source" />
+          <Parameter name="region" type="string" value="surf_obs" />
+          <Parameter name="functional" type="string" value="integral" />
+          <Parameter name="location name" type="string" value="cell" />
+        </ParameterList>
+        <ParameterList name="Q_w_ecosim" type="ParameterList">
+          <Parameter name="variable" type="string" value="surface-ecosim_water_source" />
+          <Parameter name="region" type="string" value="surf_obs" />
+          <Parameter name="functional" type="string" value="integral" />
+          <Parameter name="location name" type="string" value="cell" />
+        </ParameterList>
+        <ParameterList name="Q_e_ats" type="ParameterList">
+          <Parameter name="variable" type="string" value="surface-total_energy_source" />
+          <Parameter name="region" type="string" value="surf_obs" />
+          <Parameter name="functional" type="string" value="integral" />
+          <Parameter name="location name" type="string" value="cell" />
+        </ParameterList>
+        <ParameterList name="Q_w_ats" type="ParameterList">
+          <Parameter name="variable" type="string" value="surface-water_source" />
+          <Parameter name="region" type="string" value="surf_obs" />
+          <Parameter name="functional" type="string" value="integral" />
+          <Parameter name="location name" type="string" value="cell" />
+        </ParameterList>
+      </ParameterList>
+     </ParameterList>
   </ParameterList>
 </ParameterList>
